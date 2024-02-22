@@ -213,6 +213,49 @@ h6 {
 }
 
 /**
+    Flop Menu
+ */
+.flop-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.flop-menu {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    width: 70px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 1px 1px 1rem rgba(255,255,255,0.1);
+}
+.flop-menu .flop-item a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 0.85rem;
+    padding: 0.6rem 0;
+    gap: 0.25rem;
+}
+.flop-menu .flop-item .icon{
+    max-height: 30px;
+    font-size: 1.8rem;
+}
+.flop-menu .flop-item[data-name="kakao"] {
+    background: #fae100;
+    color: #3f3035;
+}
+.flop-menu .flop-item[data-name="blog"] {
+    background: #20c997;
+    color: white;
+}
+.flop-menu .flop-item[data-name="github"] {
+    background: black;
+    color: white;
+}
+/**
   Section
  */
 #section_home {
@@ -222,7 +265,32 @@ h6 {
     background-size: cover;
     color: white;
 }
+#section_home .section-title {
+    text-shadow: 3px 3px black;
+    padding: 2rem 0;
+    border: solid 3px;
+    border-radius: 1rem 0 1rem 0;
+    display: flex;
+    justify-content: center;
+}
+.typing {
+    width: fit-content;
+    padding-right: 0.5rem;
+    animation: blink .5s step-end infinite alternate;
+    border-right: 3px solid;
+}
 
+@keyframes typing {
+    from {
+        width: 0
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent
+    }
+}
 /**
   Animation
  */
@@ -234,4 +302,3 @@ h6 {
         transform: rotate(360deg);
     }
 }
-
