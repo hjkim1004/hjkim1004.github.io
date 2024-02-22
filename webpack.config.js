@@ -39,7 +39,7 @@ module.exports = (env, argv) => {
                 "@Images": path.resolve(__dirname, "src/assets/images"),
                 "@Fonts": path.resolve(__dirname, "src/assets/fonts"),
                 "@Data": path.resolve(__dirname, "src/data"),
-                "@Context": path.resolve(__dirname, "src/context"),
+                "@Store": path.resolve(__dirname, "src/store"),
             },
         },
         module: {

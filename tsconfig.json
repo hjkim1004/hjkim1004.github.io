@@ -24,7 +24,7 @@
       "@Images/*": ["assets/images/*"],
       "@Fonts/*": ["assets/fonts/*"],
       "@Data/*": ["data/*"],
-      "@Context/*": ["context/*"]
+      "@Store/*": ["store/*"]
     }
   },
   "include": ["src"],

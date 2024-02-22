@@ -1,15 +1,21 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import '@Fonts/notosans.css'
+import '@Fonts/default.css'
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import Introduction from "@Pages/introduction";
+import {Provider} from "react-redux";
+import store from "@Store/index";
+import MainPage from "@Pages/main";
 
 const root = ReactDOM.createRoot(
     document.getElementById('root') as HTMLElement
 );
 root.render(
     <React.StrictMode>
-        <Introduction/>
+        <Provider store={store}>
+            <MainPage />
+        </Provider>
     </React.StrictMode>
 );
 
