@@ -1,0 +1,12 @@
+.audio-controls {
+    display: flex;
+    width: 200px;
+    color: black;
+    align-items: center;
+}
+.audio-controls .audio-volume {
+    width: 150px;
+}
+div[role="tooltip"] {
+    z-index: 100;
+}

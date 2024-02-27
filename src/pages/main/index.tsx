@@ -1,27 +1,33 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import Header from "@Layout/header";
 import Footer from "@Layout/footer";
-import '@Fonts/default.css'
 import HomeSection from "@Pages/main/section/home";
 import FlopMenu from "@Layout/flop";
-import AboutSection from "@Pages/main/section/about";
 import SkillSection from "@Pages/main/section/skill";
+import ArchiveSection from "@Pages/main/section/archive";
 
-const MainPage = () => {
+import '@Style/lib/aos/2.3.1/aos.css'
+import AOS from "aos";
+import ProfileSection from "@Pages/main/section/profile";
+const App = () => {
+    useEffect(() => {
+        AOS.init({duration: 1000});
+    }, []);
+
     return (
         <>
-            <Header
-                title="Twinkle" />
+            <Header />
 
             <main className="content">
                 <HomeSection />
-                <AboutSection />
-                <SkillSection />
+                <ProfileSection />
+                <SkillSection/>
+                <ArchiveSection />
             </main>
-            <FlopMenu />
+            <FlopMenu/>
             <Footer/>
         </>
     );
 };
 
-export default MainPage;
+export default App;

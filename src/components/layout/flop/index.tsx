@@ -1,37 +1,33 @@
-import React, {useEffect} from 'react';
-import {SiVelog} from "react-icons/si";
-import {RiKakaoTalkFill} from "react-icons/ri";
-import {FaGithub} from "react-icons/fa";
+import React from 'react';
+import './style.css'
+import {links} from "@Data/link";
+import {IoIosArrowUp} from "react-icons/io";
+import {useSelector} from "react-redux";
+import {RootState} from "@Store/index";
 
 const FlopMenu = () => {
+    const offset = useSelector((state: RootState) => state.offset.value)
     return (
-        <div className="flop-list">
+        <div className={offset === 0 ? "flop-list hide" : "flop-list"}>
             <ul className="flop-menu">
-                <li className="flop-item" data-name="kakao">
-                    <a href="http://pf.kakao.com/_byerG/chat" target="_blank">
-                        <div className="icon">
-                            <RiKakaoTalkFill />
-                        </div>
-                        <div className="name">카톡 채널</div>
-                    </a>
-                </li>
-                <li className="flop-item" data-name="blog">
-                    <a href="https://velog.io/@developer_khj" target="_blank">
-                        <div className="icon">
-                            <SiVelog />
-                        </div>
-                        <div className="name">블로그</div>
-                    </a>
-                </li>
-                <li className="flop-item" data-name="github">
-                    <a href="http://github.com/hjkim1004" target="_blank">
-                        <div className="icon">
-                            <FaGithub />
-                        </div>
-                        <div className="name">깃허브</div>
-                    </a>
-                </li>
+                {links.map(item => {
+                    return (
+                        <li className="flop-item" data-name={item.id} key={'flop-item-id-' + item.id}>
+                            <a href={item.link} target="_blank">
+                                <div className="icon">
+                                    {item.icon}
+                                </div>
+                                <div className="name">{item.name}</div>
+                            </a>
+                        </li>
+                    )
+                })}
             </ul>
+            <div className="flop-top">
+                <a href="#">
+                    <IoIosArrowUp/>
+                </a>
+            </div>
         </div>
     );
 };

@@ -2,11 +2,14 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import '@Fonts/notosans.css'
 import '@Fonts/default.css'
-import './index.css';
+import '@Style/style.css';
+import '@Style/mobile.css';
 import reportWebVitals from './reportWebVitals';
 import {Provider} from "react-redux";
-import store from "@Store/index";
-import MainPage from "@Pages/main";
+import {store} from "@Store/index";
+import {DevSupport} from "@react-buddy/ide-toolbox";
+import {ComponentPreviews, useInitial} from "./dev";
+import App from "@Pages/main";
 
 const root = ReactDOM.createRoot(
     document.getElementById('root') as HTMLElement
@@ -14,7 +17,11 @@ const root = ReactDOM.createRoot(
 root.render(
     <React.StrictMode>
         <Provider store={store}>
-            <MainPage />
+            <DevSupport ComponentPreviews={ComponentPreviews}
+                        useInitialHook={useInitial}
+            >
+                <App />
+            </DevSupport>
         </Provider>
     </React.StrictMode>
 );

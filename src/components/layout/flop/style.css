@@ -1,0 +1,62 @@
+
+
+/**
+    Flop Menu
+ */
+.flop-list {
+    position: fixed;
+    bottom: 2rem;
+    right: 1rem;
+    width: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    z-index: 10;
+    transition: 1s;
+}
+.flop-menu {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 1px 1px 1rem rgba(255,255,255,0.1);
+    transition: 1s;
+}
+.flop-menu .flop-item a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 0.85rem;
+    padding: 0.6rem 0;
+    gap: 0.25rem;
+}
+.flop-menu .flop-item .icon{
+    max-height: 30px;
+    font-size: 1.8rem;
+}
+.flop-menu .flop-item[data-name="kakao"] {
+    background: #fae100;
+    color: #3f3035;
+}
+.flop-menu .flop-item[data-name="blog"] {
+    background: #20c997;
+    color: white;
+}
+.flop-menu .flop-item[data-name="github"] {
+    background: black;
+    color: white;
+}
+
+.flop-top {
+    width: 50px;
+    height: 50px;
+    background: #555;
+    font-size: 1.5rem;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

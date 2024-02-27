@@ -1,0 +1,36 @@
+.skill-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0 2rem;
+}
+.skill-box {
+    display: flex;
+    gap: 0.5rem;
+    flex-direction: column;
+    justify-content: center;
+    background: #fafafa;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+}
+.skill-box .icon {
+    font-size: 3rem;
+    max-height: 3rem;
+}
+.skill-box .name {
+    font-size: 1.1rem;
+    text-transform: capitalize;
+    width: 90%;
+    margin: 0 auto;
+}
+.skill-group {
+    padding: 1rem;
+}
+.skill-group .list {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
