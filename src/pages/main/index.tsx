@@ -9,6 +9,8 @@ import ArchiveSection from "@Pages/main/section/archive";
 import '@Style/lib/aos/2.3.1/aos.css'
 import AOS from "aos";
 import ProfileSection from "@Pages/main/section/profile";
+import ScrollBar from "@Layout/scrollbar";
+
 const App = () => {
     useEffect(() => {
         AOS.init({duration: 1000});
@@ -16,13 +18,13 @@ const App = () => {
 
     return (
         <>
-            <Header />
-
-            <main className="content">
-                <HomeSection />
-                <ProfileSection />
+            <ScrollBar/>
+            <Header/>
+            <main id="content">
+                <HomeSection/>
+                <ProfileSection/>
                 <SkillSection/>
-                <ArchiveSection />
+                <ArchiveSection/>
             </main>
             <FlopMenu/>
             <Footer/>

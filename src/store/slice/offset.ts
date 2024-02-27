@@ -13,4 +13,4 @@ const scrollOffsetSlice = createSlice({
 });
 
 export const {changeOffset} = scrollOffsetSlice.actions;
-export default scrollOffsetSlice;
+export default scrollOffsetSlice.reducer;

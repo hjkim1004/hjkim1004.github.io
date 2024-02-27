@@ -39,7 +39,6 @@ module.exports = (env, argv) => {
                 "@Pages": path.resolve(__dirname, "src/pages/"),
                 "@Images": path.resolve(__dirname, "src/assets/images"),
                 "@Fonts": path.resolve(__dirname, "src/assets/fonts"),
-                "@Music": path.resolve(__dirname, "src/assets/music"),
                 "@Models": path.resolve(__dirname, "src/assets/models"),
                 "@Data": path.resolve(__dirname, "src/data"),
                 "@Store": path.resolve(__dirname, "src/store"),
@@ -57,21 +56,14 @@ module.exports = (env, argv) => {
                     test: /\.(woff|woff2|eot|ttf|otf)$/i,
                     type: 'asset/resource',
                     generator: {
-                        filename: "fonts/[name]_[hash][ext]"
-                    }
-                },
-                {
-                    test: /\.(m4a)$/i,
-                    use: ['file-loader'],
-                    generator: {
-                        filename: "music/[name]_[hash][ext]"
+                        filename: "fonts/[hash][ext]"
                     }
                 },
                 {
                     test: /\.(png|svg|jpg|jpeg|gif|ico)$/i,
                     type: 'asset/resource',
                     generator: {
-                        filename: "images/[name]_[hash][ext]"
+                        filename: "images/[hash][ext]"
                     }
                 },
                 {
@@ -111,14 +103,6 @@ module.exports = (env, argv) => {
                     {
                         from: 'src/assets/models',  // 복사할 디렉토리
                         to: 'models',        // 복사될 위치 (output.path 기준)
-                    },
-                ],
-            }),
-            new CopyWebpackPlugin({
-                patterns: [
-                    {
-                        from: 'src/assets/music',  // 복사할 디렉토리
-                        to: 'music',        // 복사될 위치 (output.path 기준)
                     },
                 ],
             }),

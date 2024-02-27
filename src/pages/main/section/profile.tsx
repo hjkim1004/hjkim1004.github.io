@@ -4,14 +4,14 @@ const ProfileSection = () => {
     return (
         <section id="section_profile" className="section">
             <h1 className="section-title">Introduction</h1>
-            <div className="section-desc">
-                안녕하세요. 애플리케이션 개발을 사랑하는 풀스택 개발자 김희정입니다.
+            <div className="section-content">
+                안녕하세요. 애플리케이션 개발을 사랑하는 풀스택 개발자 Twinkle 입니다. 🙌
 
                 <br/><br/>
 
                 학부시절 화면 만드는 것을 굉장히 싫어했던 저는 의도치 않게 풀스택 직무를 만나, <br className={"pc"}/>
                 사용자와 소통하는 UI/UX 설계부터 프론트 개발, 정보를 저장하는 DB 설계부터 백엔드 개발까지 <br className={"pc"}/>
-                애플리케이션 전반을 아우르는 풀스택에 큰 가치를 느끼게되어 사랑하게 되었습니다. 💖
+                애플리케이션 전반을 아우르는 풀스택에 큰 가치를 느끼면서 사랑에 빠지게 되었습니다. 💖
 
                 <br/><br/>
 

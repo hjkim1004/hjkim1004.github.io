@@ -226,6 +226,10 @@ canvas.babylon-canvas:active {
 .header ul.header-nav li:hover:after {
     transform: scaleX(1);
 }
+.footer {
+    background: #111 !important;
+    color: white;
+}
 .content {
     position: relative;
 }

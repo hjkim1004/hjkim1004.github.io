@@ -23,7 +23,6 @@
       "@Pages/*": ["pages/*"],
       "@Images/*": ["assets/images/*"],
       "@Fonts/*": ["assets/fonts/*"],
-      "@Music/*": ["assets/music/*"],
       "@Models/*": ["assets/models/*"],
       "@Style/*": ["assets/css/*"],
       "@Data/*": ["data/*"],

@@ -3,7 +3,7 @@ const Footer = () => {
     return (
         <footer className="footer section">
             <div>
-
+                Copyright 2024. Heejeong Kim. All rights reserved.
             </div>
             <div></div>
         </footer>

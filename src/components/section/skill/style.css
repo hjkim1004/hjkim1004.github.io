@@ -9,7 +9,7 @@
     gap: 0.5rem;
     flex-direction: column;
     justify-content: center;
-    background: #fafafa;
+    background: rgba(210,210,210,0.1);
     width: 10rem;
     height: 10rem;
     border-radius: 50%;

@@ -13,12 +13,6 @@ const Skill = (props: ISKill) => {
                     <Rating value={props.rating} precision={0.5} max={3} size="small" readOnly/>
                 </div>
             ): ''}
-            <div className="desc">{props.description}</div>
-            <ul>
-                {props.features?.map(feature => {
-                    return (<li>{feature}</li>)
-                })}
-            </ul>
         </div>
     );
 };

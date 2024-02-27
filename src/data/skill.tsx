@@ -32,7 +32,8 @@ export const SkillGroup = {
     CORE: 'core',
     FRONT: 'front',
     SERVER: 'server',
-    DATABASE: 'database',
+    RDBMS: 'rdbms',
+    NOSQL: 'nosql',
     IDE: 'tool',
     VCS: 'vcs',
     APP: 'app',
@@ -159,21 +160,18 @@ const skills: ISKill[] = [
     {
         id: 'linux',
         name: 'Linux',
-        rating: 1,
         icon: (<FcLinux/>),
         group: SkillGroup.SERVER
     },
     {
         id: 'githubactions',
         name: 'GitHub Actions',
-        rating: 2,
         icon: (<img src={GitHubActionIcon} alt={"GitHub Actions Icon"}/>),
         group: SkillGroup.SERVER
     },
     {
         id: 'activemq',
         name: 'ActiveMQ',
-        rating: 1.5,
         icon: (<img src={ActiveMQIcon} alt={"ActiveMQ Icon"}/>),
         group: SkillGroup.SERVER
     },
@@ -183,34 +181,34 @@ const skills: ISKill[] = [
         id: 'postgres',
         name: 'PostgreSQL',
         icon: (<img src={PostgresIcon} alt={"React Icon"}/>),
-        group: SkillGroup.DATABASE
+        group: SkillGroup.RDBMS
     },
     {
         id: 'mssql',
         name: 'SQL Server',
         icon: (<img src={SqlServerIcon} alt={"SQL Server Icon"}/>),
-        group: SkillGroup.DATABASE
+        group: SkillGroup.RDBMS
     },
     {
         id: 'mysql',
         name: 'MySQL',
         icon: (<GrMysql/>),
         color: '#00718b',
-        group: SkillGroup.DATABASE
+        group: SkillGroup.RDBMS
     },
     {
         id: 'oracle',
         name: 'Oracle',
         icon: (<SiOracle/>),
         color: '#f70000',
-        group: SkillGroup.DATABASE
+        group: SkillGroup.RDBMS
     },
     {
         id: 'mongo',
         name: 'MongoDB',
         rating: 1,
         icon: (<img src={MongoDBIcon} alt={"MongoDB Icon"}/>),
-        group: SkillGroup.DATABASE
+        group: SkillGroup.NOSQL
     },
 
     /* Tool */
@@ -289,16 +287,16 @@ const skills: ISKill[] = [
         group: SkillGroup.OTHER
     },
     {
+        id: 'phpstorm',
+        name: 'PhpStorm',
+        icon: (<img src={PhpStormIcon} alt={"PhpStorm Icon"}/>),
+        group: SkillGroup.OTHER
+    },
+    {
         id: 'vscode',
         name: 'VS Code',
         icon: (<img src={VSCodeIcon} alt={"VSCode Icon"}/>),
         group: SkillGroup.OTHER
-    },
-    {
-        id: 'phpstorm',
-        name: 'PhpStorm',
-        icon: (<img src={PhpStormIcon} alt={"PhpStorm Icon"}/>),
-        group: SkillGroup.APP
     },
 
     {

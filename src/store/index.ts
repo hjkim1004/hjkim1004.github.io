@@ -3,7 +3,7 @@ import scrollOffsetSlice from "@Store/slice/offset";
 
 export const store = configureStore({
     reducer: {
-        offset: scrollOffsetSlice.reducer
+        offset: scrollOffsetSlice
     }
 })
 export type RootState = ReturnType<typeof store.getState>
