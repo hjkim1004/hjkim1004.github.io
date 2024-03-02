@@ -1,5 +1,4 @@
 import React from 'react';
-import './style.css'
 import {links} from "@Data/link";
 import {IoIosArrowUp} from "react-icons/io";
 import {useSelector} from "react-redux";

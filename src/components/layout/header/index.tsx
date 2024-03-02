@@ -7,10 +7,15 @@ import {SlMenu} from "react-icons/sl";
 import {changeOffset} from "@Store/slice/offset";
 import config from "@Data/config";
 import {menus} from "@Data/link";
+import {DrawerType, openDrawer} from "@Store/slice/drawer";
+import {BsMoonStarsFill, BsSunFill} from "react-icons/bs";
+import {changeTheme, ThemeType} from "@Store/slice/theme";
 
 const Header = () => {
     const dispatch = useDispatch()
     const offset = useSelector((state: RootState) => state.offset.value)
+    const theme = useSelector((state: RootState) => state.theme.value)
+
     useEffect(() => {
         const onScroll = () => dispatch(changeOffset(window.scrollY));
 
@@ -35,7 +40,23 @@ const Header = () => {
                         )
                     })}
                 </ul>
-                <IconButton className="header-icon menu-icon">
+                <IconButton className="btn-icon" onClick={() => {
+                    if(theme === ThemeType.DARK){
+                        dispatch(changeTheme(ThemeType.LIGHT))
+                    } else {
+                        dispatch(changeTheme(ThemeType.DARK))
+                    }
+                }}>
+                    {theme === ThemeType.DARK ? (
+                        <BsSunFill />
+                    ): (
+                        <BsMoonStarsFill />
+                    )}
+
+                </IconButton>
+                <IconButton className="header-icon" onClick={() => {
+                    dispatch(openDrawer(DrawerType.SIDEBAR))
+                }}>
                     <SlMenu/>
                 </IconButton>
             </div>

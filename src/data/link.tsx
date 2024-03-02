@@ -2,11 +2,12 @@ import React, {ReactNode} from "react";
 import {RiKakaoTalkFill} from "react-icons/ri";
 import {SiVelog} from "react-icons/si";
 import {FaGithub} from "react-icons/fa";
+import {IoHome, IoIdCard} from "react-icons/io5";
 
 export interface ILink {
     id: string,
     name: string
-    link?: string
+    link: string
     color?: string
     icon?: ReactNode | undefined
 }
@@ -17,8 +18,8 @@ export const links: ILink[] = [
     {id: 'github', name: '깃허브', link: 'https://github.com/hjkim1004', color: '#fff', icon: (<FaGithub/>)}
 ]
 export const menus: ILink[] = [
-    {id: 'home', name: 'Home', link: '#section_home'},
-    {id: 'profile', name: 'Profile', link: '#section_profile'},
+    {id: 'home', name: 'Home', link: '#section_home', icon: (<IoHome />)},
+    {id: 'profile', name: 'Profile', link: '#section_profile', icon: (<IoIdCard />)},
     {id: 'skill', name: 'Skill', link: '#section_skill'},
     {id: 'project', name: 'Project', link: '#section_project'},
     {id: 'contact', name: 'Contact', link: '#section_contact'},

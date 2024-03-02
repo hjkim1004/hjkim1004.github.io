@@ -23,6 +23,7 @@ import GitHubActionIcon from '@Images/tech_githubactions.svg'
 import ActiveMQIcon from '@Images/tech_activemq.png'
 import KotlinIcon from '@Images/tech_kotlin.png';
 import AndroidStudioIcon from '@Images/tech_android.png';
+import SpringSecurityIcon from '@Images/tech_springsecurity.png'
 import SwiftIcon from '@Images/tech_swift.svg';
 import XCodeIcon from '@Images/tech_xcode.svg';
 import FigmaIcon from '@Images/tech_figma.svg';
@@ -30,6 +31,7 @@ import {FcLinux} from "react-icons/fc";
 
 export const SkillGroup = {
     CORE: 'core',
+    BACK: 'back',
     FRONT: 'front',
     SERVER: 'server',
     RDBMS: 'rdbms',
@@ -92,6 +94,20 @@ const skills: ISKill[] = [
         icon: (<FaDatabase/>),
         color: '#68bd45',
         group: SkillGroup.CORE
+    },
+
+    /* Back End */
+    {
+        id: 'springsecurity',
+        name: 'Spring Security',
+        icon: (<img src={SpringSecurityIcon} alt={"Spring Security Icon"}/>),
+        group: SkillGroup.BACK
+    },
+    {
+        id: 'activemq',
+        name: 'ActiveMQ',
+        icon: (<img src={ActiveMQIcon} alt={"ActiveMQ Icon"}/>),
+        group: SkillGroup.BACK
     },
 
     /* Front End */
@@ -167,12 +183,6 @@ const skills: ISKill[] = [
         id: 'githubactions',
         name: 'GitHub Actions',
         icon: (<img src={GitHubActionIcon} alt={"GitHub Actions Icon"}/>),
-        group: SkillGroup.SERVER
-    },
-    {
-        id: 'activemq',
-        name: 'ActiveMQ',
-        icon: (<img src={ActiveMQIcon} alt={"ActiveMQ Icon"}/>),
         group: SkillGroup.SERVER
     },
 

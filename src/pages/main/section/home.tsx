@@ -17,7 +17,7 @@ const HomeSection = () => {
                 <Typewriter text={config.titleText} delay={100}/>
             </h1>
             <div className="scroll-down" data-aos="fade-up" data-aos-offset={0}>
-                <a href={"#section_profile"}>
+                <a href={"#section_intro"}>
                     <div className="icon"><CgMouse/></div>
                     <div className="title">Scroll Down</div>
                 </a>

@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import '@Fonts/notosans.css'
 import '@Fonts/default.css'
 import '@Style/style.css';
+import '@Style/dark.css';
 import '@Style/mobile.css';
 import reportWebVitals from './reportWebVitals';
 import {Provider} from "react-redux";

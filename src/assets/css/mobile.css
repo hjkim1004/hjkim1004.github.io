@@ -21,7 +21,10 @@
         display: none !important;
     }
     .header .header-icon {
-        display: block !important;
+        display: inherit !important;
+    }
+    .header button {
+        margin-left: 0;
     }
 }
 
@@ -33,9 +36,24 @@
         --size-header-logo: 50px;
         --size-header-scrolled: 100px;
         --size-header-title: 3rem;
+        --fs-title: 3rem;
+        --fs-1: 2rem;
+        --fs-2: 1.75rem;
+        --fs-3: 1.5rem;
+        --fs-4: 1.25rem;
+        --fs-5: 1.125rem;
+        --fs-6: 1rem;
+        --fs-7: 0.9rem;
     }
     .header ul.header-nav {
         display: none;
+    }
+
+    .flop-list {
+        position: fixed;
+        bottom: 1rem;
+        right: 1rem;
+        width: auto;
     }
     .flop-menu {
         display: none !important;
@@ -45,6 +63,52 @@
     }
     .mobile {
         display: block !important;
+    }
+
+    /* Scroll */
+    .scroll-container {
+        height: 0px;
+    }
+
+    /* Section */
+    .section {
+        padding: 5rem 0;
+    }
+
+    /* Skill */
+    .skill-container {
+        gap: 0 1rem
+    }
+    .skill-group {
+        width: 100%;
+    }
+    .skill-group .list {
+        gap: 0.5rem;
+    }
+    .skill-box {
+        flex-direction: row;
+        gap: 0.25rem;
+        width: 100%;
+        height: 2.5rem;
+        border-radius: 0.25rem;
+        padding: 0.5rem 0.8rem;
+        align-items: center;
+    }
+    .skill-box:hover,
+    .skill-box:active,
+    .skill-box:focus {
+        border: solid 2px;
+        transform: scale(1.05) !important;
+        transition-delay: 0.3s !important;
+        transition-timing-function: ease !important;
+    }
+    .skill-box .icon {
+        font-size: 1.5rem;
+        height: 1.5rem;
+        width: 1.5rem;
+    }
+    .skill-box .name {
+        text-align: left;
     }
 }
 

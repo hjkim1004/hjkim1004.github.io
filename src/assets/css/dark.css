@@ -1,0 +1,12 @@
+body[data-theme="dark"] .section {
+    background: #555;
+    color: white;
+}
+body[data-theme="dark"] .section:nth-child(2n) {
+    background: #444;
+}
+
+body[data-theme="dark"] .skill-box:hover {
+    color: #333;
+    border-color: transparent;
+}

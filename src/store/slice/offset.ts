@@ -1,4 +1,4 @@
-import {createSlice} from "@reduxjs/toolkit";
+import {createSlice, PayloadAction} from "@reduxjs/toolkit";
 
 const scrollOffsetSlice = createSlice({
     name: 'offset',
@@ -6,11 +6,11 @@ const scrollOffsetSlice = createSlice({
         value: document.body.offsetTop
     },
     reducers: {
-        changeOffset(state, after){
-            state.value = after.payload
+        changeOffset(state, action: PayloadAction<number>){
+            state.value = action.payload
         }
     }
 });
 
 export const {changeOffset} = scrollOffsetSlice.actions;
-export default scrollOffsetSlice.reducer;
+export default scrollOffsetSlice;

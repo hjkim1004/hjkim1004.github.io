@@ -1,7 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import {useSelector} from "react-redux";
 import {RootState} from "@Store/index";
-import './style.css'
 
 const ScrollBar = () => {
     const [width, setWidth] = useState('0%')
