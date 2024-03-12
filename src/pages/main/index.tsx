@@ -12,7 +12,8 @@ import HomeSection from "@Pages/main/section/home";
 import IntroductionSection from "@Pages/main/section/introduction";
 import ProfileSection from "@Pages/main/section/profile";
 import SkillSection from "@Pages/main/section/skill";
-import ArchiveSection from "@Pages/main/section/archive";
+import CareerSection from "@Pages/main/section/career";
+import ProjectSection from "@Pages/main/section/project";
 
 const App = () => {
     useEffect(() => {
@@ -27,8 +28,9 @@ const App = () => {
                 <HomeSection/>
                 <IntroductionSection/>
                 <ProfileSection/>
+                <CareerSection/>
+                <ProjectSection />
                 <SkillSection/>
-                <ArchiveSection/>
             </main>
 
             <DrawerSection />

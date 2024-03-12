@@ -1,6 +1,9 @@
 .pc {
     display: inherit;
 }
+span.pc {
+    display: inline;
+}
 .mobile {
     display: none !important;
 }
@@ -20,11 +23,17 @@
     .header .header-nav {
         display: none !important;
     }
+
     .header .header-icon {
         display: inherit !important;
     }
+
     .header button {
         margin-left: 0;
+    }
+
+    .profile-box {
+        width: calc(50% - 1rem / 2)
     }
 }
 
@@ -45,6 +54,7 @@
         --fs-6: 1rem;
         --fs-7: 0.9rem;
     }
+
     .header ul.header-nav {
         display: none;
     }
@@ -55,12 +65,15 @@
         right: 1rem;
         width: auto;
     }
+
     .flop-menu {
         display: none !important;
     }
+
     .pc {
         display: none !important;
     }
+
     .mobile {
         display: block !important;
     }
@@ -75,38 +88,62 @@
         padding: 5rem 0;
     }
 
+    .footer {
+        padding: 3rem 0 !important;
+    }
+
+    #section_home {
+        height: 600px;
+        max-height: 80vh;
+        overflow: hidden;
+    }
+
+    /* Profile */
+    .profile-container {
+        gap: 1rem;
+        padding: 2rem 1rem;
+        flex-direction: column;
+    }
+    .profile-img img {
+        height: 150px;
+    }
+
+    .profile-container .profile-box {
+        width: 100%;
+    }
+    .profile-info {
+        gap: 1rem;
+    }
+
     /* Skill */
     .skill-container {
         gap: 0 1rem
     }
+
     .skill-group {
         width: 100%;
     }
+
     .skill-group .list {
         gap: 0.5rem;
     }
+
     .skill-box {
         flex-direction: row;
-        gap: 0.25rem;
+        gap: 0.5rem;
         width: 100%;
         height: 2.5rem;
         border-radius: 0.25rem;
         padding: 0.5rem 0.8rem;
         align-items: center;
     }
-    .skill-box:hover,
-    .skill-box:active,
-    .skill-box:focus {
-        border: solid 2px;
-        transform: scale(1.05) !important;
-        transition-delay: 0.3s !important;
-        transition-timing-function: ease !important;
-    }
+
     .skill-box .icon {
         font-size: 1.5rem;
         height: 1.5rem;
         width: 1.5rem;
     }
+
     .skill-box .name {
         text-align: left;
     }
@@ -119,10 +156,5 @@
         --size-header-logo: 40px;
         --size-header-scrolled: 80px;
         --size-header-title: 2.5rem;
-    }
-
-    #section_home {
-        height: 500px;
-        overflow: hidden;
     }
 }

@@ -1,8 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import 'tippy.js/dist/tippy.css';
 import '@Fonts/notosans.css'
 import '@Fonts/default.css'
 import '@Style/style.css';
+import '@Style/light.css';
 import '@Style/dark.css';
 import '@Style/mobile.css';
 import reportWebVitals from './reportWebVitals';

@@ -1,12 +1,29 @@
+/* Layout */
+body[data-theme="dark"] .flop-top {
+    background: #000;
+}
 body[data-theme="dark"] .section {
     background: #555;
     color: white;
+}
+body[data-theme="dark"] .section .section-title{
 }
 body[data-theme="dark"] .section:nth-child(2n) {
     background: #444;
 }
 
+/* Profile */
+body[data-theme="dark"] .profile-container {
+    background: rgb(0 0 0 / 10%);
+}
+body[data-theme="dark"] .profile-box a:hover {
+    color: #ffdcfa;
+}
+body[data-theme="dark"] .profile-box .icon {
+    color: #999;
+}
+/* Skill */
 body[data-theme="dark"] .skill-box:hover {
+    background: white;
     color: #333;
-    border-color: transparent;
 }

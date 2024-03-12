@@ -28,10 +28,10 @@ const Header = () => {
     return (
         <header className={offset > 0 ? "header scrolled" : "header"}>
             <div className="inner">
-                <div className="header-logo">
+                <div className="logo">
                     <img src={Logo} alt="메인 로고 이미지"/>
+                    <div className="title">{config.logoText}</div>
                 </div>
-                <div className="header-title">{config.logoText}</div>
                 <div className="flex-1"></div>
                 <ul className="header-nav">
                     {menus.map(menu => {

@@ -14,6 +14,8 @@ import {
 
 import "@babylonjs/loaders";
 import "@babylonjs/loaders/glTF";
+import {useDispatch} from "react-redux";
+import {mainLoaded} from "@Store/slice/loading";
 
 interface IBabylonInterface {
     rootUrl: string,
@@ -22,6 +24,7 @@ interface IBabylonInterface {
     sceneOptions?: SceneOptions
     onSceneReady?: (scene: Scene) => {}
     onRender?: (scene: Scene) => {}
+    onMeshLoaded?: () => {}
 }
 
 const Babylon = (props: IBabylonInterface) => {
@@ -42,7 +45,7 @@ const Babylon = (props: IBabylonInterface) => {
         const createScene = () => {
             // 워커 사용을 위한 WorkerLoader 생성
             const scene = new Scene(engine);
-            scene.clearColor = Color4.FromColor3(Color3.Black());
+            scene.clearColor = new Color4(0,0,0,0);
 
             const target = new Vector3(0, 0, 0);
             const camera = new UniversalCamera("Camera", target, scene);
@@ -61,6 +64,9 @@ const Babylon = (props: IBabylonInterface) => {
                 const newMeshes = result.meshes
                 newMeshes[0].position.y = 0;
                 newMeshes[0].scaling = new Vector3(80, 80, 80);
+
+            }).then(value => {
+                props.onMeshLoaded?.();
             })
             return scene
         }

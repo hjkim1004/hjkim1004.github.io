@@ -1,9 +1,9 @@
 import React from 'react';
 
-const ArchiveSection = () => {
+const ProjectSection = () => {
     return (
-        <section id="section_archive" className="section">
-            <h1 className="section-title">Archive</h1>
+        <section id="section_project" className="section">
+            <h1 className="section-title">Project</h1>
             <div className="section-content">
                 <ul>
                     <li>
@@ -15,4 +15,4 @@ const ArchiveSection = () => {
     );
 };
 
-export default ArchiveSection;
+export default ProjectSection;

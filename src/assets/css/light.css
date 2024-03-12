@@ -1,0 +1,35 @@
+body[data-theme="light"] #section_intro {
+    background: white;
+}
+
+body[data-theme="light"] #section_intro .section-title {
+    color: #ff4c91;
+}
+
+body[data-theme="light"] #section_intro .section-title::before {
+    color: #ffd0e2;
+}
+
+body[data-theme="light"] #section_intro .section-content {
+    background: #fff2f7;
+}
+
+/* Profile */
+body[data-theme="light"] .section:has(.profile-container) {
+    background: url("@Images/bg_blue.png") center / 100% no-repeat;
+    background-size: cover !important;
+    background-attachment: fixed !important;
+}
+
+body[data-theme="light"] .profile-box .icon {
+    color: #4f5cff;
+}
+
+body[data-theme="light"] .profile-container {
+    background: rgba(255, 255, 255, 0.75);
+    box-shadow: 1px 1px 1rem rgb(100 100 100 / 5%);
+}
+
+body[data-theme="light"] .profile-box a:hover {
+    color: #0619ff;
+}

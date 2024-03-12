@@ -12,6 +12,7 @@ const ScrollBar = () => {
         const scrolled = (winScroll / height) * 100;
         setWidth(scrolled.toString() + '%');
     }, [offset]);
+
     return (
         <div className="scroll-container">
             <div className="scroll-bar" id="myBar" style={{width: width}}></div>

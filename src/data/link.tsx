@@ -20,7 +20,7 @@ export const links: ILink[] = [
 export const menus: ILink[] = [
     {id: 'home', name: 'Home', link: '#section_home', icon: (<IoHome />)},
     {id: 'profile', name: 'Profile', link: '#section_profile', icon: (<IoIdCard />)},
-    {id: 'skill', name: 'Skill', link: '#section_skill'},
+    {id: 'career', name: 'Career', link: '#section_career'},
     {id: 'project', name: 'Project', link: '#section_project'},
-    {id: 'contact', name: 'Contact', link: '#section_contact'},
+    {id: 'skill', name: 'Skill', link: '#section_skill'},
 ]
