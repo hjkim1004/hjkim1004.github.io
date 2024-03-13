@@ -68,13 +68,6 @@ module.exports = (env, argv) => {
                     }
                 },
                 {
-                    test: /\.(gltf|glb|bin)$/,
-                    use: ['file-loader'],
-                    generator: {
-                        filename: "models/[name][ext]"
-                    }
-                },
-                {
                     test: /\.css$/,
                     use: ["style-loader", "css-loader"],
                 },
