@@ -10,7 +10,7 @@ import Tippy from "@tippyjs/react";
 const ProfileSection = () => {
     return (
         <section id="section_profile" className="section">
-            <h1 className="section-title">Profile</h1>
+            <h2 className="section-title">Profile</h2>
             <div className="section-content">
                 <Carousel
                     autoPlay={false}

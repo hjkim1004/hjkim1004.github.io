@@ -37,7 +37,7 @@ const SkillSection = () => {
 
     return (
         <section id="section_skill" className="section">
-            <h1 className="section-title">Skills</h1>
+            <h2 className="section-title">Skills</h2>
             <div className="section-content" ref={contentRef} style={{maxHeight: '700px'}}>
                 <div className="skill-container">
                     {Object.entries(SkillGroup).map(([key, value]) => {

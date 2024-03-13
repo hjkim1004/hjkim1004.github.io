@@ -9,9 +9,9 @@ const HomeSection = () => {
         <section id="section_home" className="section">
             <div className="section-bg">
             </div>
-            <h1 className="section-title" data-aos="fade-up" data-aos-delay={100}>
+            <h2 className="section-title" data-aos="fade-up" data-aos-delay={100}>
                 <Typewriter text={config.titleText} delay={100}/>
-            </h1>
+            </h2>
             <div className="scroll-down" data-aos="fade-up" data-aos-offset={0}>
                 <a href={"#section_profile"}>
                     <div className="icon"><CgMouse/></div>

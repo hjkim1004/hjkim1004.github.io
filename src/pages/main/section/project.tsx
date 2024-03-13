@@ -3,7 +3,7 @@ import React from 'react';
 const ProjectSection = () => {
     return (
         <section id="section_project" className="section">
-            <h1 className="section-title">Project</h1>
+            <h2 className="section-title">Project</h2>
             <div className="section-content">
                 <ul>
                     <li>
