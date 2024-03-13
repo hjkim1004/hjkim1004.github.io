@@ -82,7 +82,7 @@ module.exports = (env, argv) => {
             new HtmlWebpackPlugin({
                 template: "./template/index.html",
                 favicon: "./src/assets/images/favicon.png",
-                // template에 해당하는 파일에 dotenv 사용을 위한 설정
+                inject: "body",
                 minify:
                     process.env.NODE_ENV === "production"
                         ? {
