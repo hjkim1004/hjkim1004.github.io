@@ -65,7 +65,6 @@ const Babylon = (props: IBabylonInterface) => {
                 newMeshes[0].position.y = 0;
                 newMeshes[0].scaling = new Vector3(80, 80, 80);
 
-            }).then(value => {
                 props.onMeshLoaded?.();
             })
             return scene
@@ -79,8 +78,8 @@ const Babylon = (props: IBabylonInterface) => {
         }
 
         engine.runRenderLoop(() => {
-            props.onRender?.(scene);
             scene.render();
+            props.onRender?.(scene);
         });
 
         const resize = () => {
@@ -92,7 +91,7 @@ const Babylon = (props: IBabylonInterface) => {
         }
 
         return () => {
-            scene.getEngine().dispose();
+            engine.dispose();
 
             if (window) {
                 window.removeEventListener("resize", resize);

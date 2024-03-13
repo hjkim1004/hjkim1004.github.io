@@ -12,18 +12,33 @@ import {Provider} from "react-redux";
 import {store} from "@Store/index";
 import {DevSupport} from "@react-buddy/ide-toolbox";
 import {ComponentPreviews, useInitial} from "./dev";
-import App from "@Pages/main";
+
+import MainApp from "@Pages/main";
+import SpaceApp from "@Pages/space";
+import ErrorApp from "@Pages/error";
+
+import {createBrowserRouter, createRoutesFromElements, Route, RouterProvider,} from "react-router-dom";
 
 const root = ReactDOM.createRoot(
     document.getElementById('root') as HTMLElement
 );
+const router = createBrowserRouter([
+    {
+        path: "/",
+        element: <MainApp />,
+    },
+    {
+        path: "/space",
+        element: <SpaceApp />,
+    },
+]);
 root.render(
     <React.StrictMode>
         <Provider store={store}>
             <DevSupport ComponentPreviews={ComponentPreviews}
                         useInitialHook={useInitial}
             >
-                <App />
+                <RouterProvider router={router}/>
             </DevSupport>
         </Provider>
     </React.StrictMode>

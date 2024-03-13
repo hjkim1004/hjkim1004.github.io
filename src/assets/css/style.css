@@ -430,9 +430,13 @@ button {
     position: absolute;
     top: 70%;
     transform: translateY(-70%);
-    width: 100px;
+    width: 200px;
     display: flex;
+    gap: 1rem;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    transition: visibility 0s linear 0.33s, opacity 0.33s linear;
 }
 .scroll-down {
     position: absolute;
@@ -506,7 +510,7 @@ button {
     font-weight: 600;
 }
 .profile-img img {
-    height: 200px;
+    height: 180px;
     border-radius: 50%;
 }
 .profile-info {
