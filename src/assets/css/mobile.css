@@ -1,5 +1,5 @@
 .pc {
-    display: inherit;
+    display: block;
 }
 span.pc {
     display: inline;

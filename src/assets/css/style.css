@@ -190,7 +190,7 @@ button {
 .header.scrolled {
     height: var(--size-header-scrolled);
     background: var(--bg-header-color);
-    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 1px 1px 2rem rgba(0, 0, 0, 0.3);
 }
 
 .logo {
@@ -376,9 +376,6 @@ button {
 }
 
 .section .section-content {
-    margin-top: 2rem;
-}
-.section article:not(:first-child) {
     margin-top: 2rem;
 }
 .section .section-desc:first-child,
@@ -579,6 +576,35 @@ button {
     border-radius: 1rem;
 }
 
+/* Career */
+.career-section {
+    margin-bottom: 1.5rem;
+}
+.career-section .career-title {
+    font-size: var(--fs-5);
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 0.25rem;
+}
+.career-section .career-logo {
+    width: fit-content;
+    padding: 0.5rem 0.8rem;
+    border-radius: 1rem;
+    display: flex;
+    margin-bottom: 0.5rem;
+    box-shadow: 0 0 1rem rgba(0,0,0,0.1);
+}
+.career-section .career-logo img {
+    height: 30px;
+
+}
+.career-section .career-pos {
+    font-size: var(--fs-6);
+    font-weight: 300;
+}
+.career-section .career-pos b {
+    font-weight: 400;
+}
 
 /* Skills */
 .skill-container {

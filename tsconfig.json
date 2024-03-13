@@ -27,6 +27,7 @@
       "@Style/*": ["assets/css/*"],
       "@Data/*": ["data/*"],
       "@Store/*": ["store/*"],
+      "@Utils/*": ["utils/*"],
     }
   },
   "include": ["src"],

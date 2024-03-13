@@ -9,7 +9,6 @@ import ScrollBar from "@Layout/scrollbar";
 import DrawerSection from "@Layout/drawer";
 
 import HomeSection from "@Pages/main/section/home";
-import IntroductionSection from "@Pages/main/section/introduction";
 import ProfileSection from "@Pages/main/section/profile";
 import SkillSection from "@Pages/main/section/skill";
 import CareerSection from "@Pages/main/section/career";
@@ -26,7 +25,6 @@ const App = () => {
             <Header/>
             <main id="content">
                 <HomeSection/>
-                <IntroductionSection/>
                 <ProfileSection/>
                 <CareerSection/>
                 <ProjectSection />

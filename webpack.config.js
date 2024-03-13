@@ -43,6 +43,7 @@ module.exports = (env, argv) => {
                 "@Data": path.resolve(__dirname, "src/data"),
                 "@Store": path.resolve(__dirname, "src/store"),
                 "@Style": path.resolve(__dirname, "src/assets/css"),
+                "@Utils": path.resolve(__dirname, "src/utils"),
             },
         },
         module: {
