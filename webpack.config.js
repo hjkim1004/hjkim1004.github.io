@@ -108,6 +108,10 @@ module.exports = (env, argv) => {
                         from: 'template/manifest.json',
                         to: 'manifest.json',
                     },
+                    {
+                        from: 'template/404.html',
+                        to: '404.html',
+                    },
                 ],
             }),
         ],

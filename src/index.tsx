@@ -18,6 +18,7 @@ import SpaceApp from "@Pages/space";
 import ErrorApp from "@Pages/error";
 
 import {createBrowserRouter, createRoutesFromElements, Route, RouterProvider,} from "react-router-dom";
+import * as process from "process";
 
 const root = ReactDOM.createRoot(
     document.getElementById('root') as HTMLElement
@@ -31,7 +32,13 @@ const router = createBrowserRouter([
         path: "/space",
         element: <SpaceApp />,
     },
-]);
+    {
+        path: "*",
+        element: <ErrorApp />,
+    },
+], {
+    basename: process.env.PUBLIC_URL
+});
 root.render(
     <React.StrictMode>
         <Provider store={store}>
