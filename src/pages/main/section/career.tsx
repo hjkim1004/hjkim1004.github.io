@@ -38,7 +38,8 @@ const CareerSection = () => {
             <div className="section-content">
                 <Timeline>
                     {careers.map((career, index) => (
-                        <TimelineItem key={"career-" + career.id}>
+                        <TimelineItem key={"career-" + career.id} data-aos="fade-up"
+                                      data-aos-delay={(index + 1) * 100}>
                             <TimelineOppositeContent className={"pc"}>
                                 <div>
                                     {career.period?.map(e => DateUtil.getDateToStr({date: e, returnType: 'day'}))

@@ -29,7 +29,7 @@ const Header = () => {
         <header className={offset > 0 ? "header scrolled" : "header"}>
             <div className="inner">
                 <div className="logo">
-                    <img src={Logo} alt="메인 로고 이미지"/>
+                    <img src={Logo} alt="메인 로고 이미지" title={"메인 로고 이미지"}/>
                     <div className="title">{config.logoText}</div>
                 </div>
                 <div className="flex-1"></div>

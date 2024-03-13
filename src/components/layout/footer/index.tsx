@@ -7,7 +7,7 @@ const Footer = () => {
     return (
         <footer className="footer section">
             <div className="logo footer-logo">
-                <img src={Logo} alt="메인 로고 이미지"/>
+                <img src={Logo} alt="메인 로고 이미지" title="메인 로고 이미지"/>
                 <div className="title">{config.logoText}</div>
             </div>
             <div>

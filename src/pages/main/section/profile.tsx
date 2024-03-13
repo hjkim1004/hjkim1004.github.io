@@ -39,7 +39,7 @@ const ProfileSection = () => {
                 >
                     <div className="profile-container">
                         <div className={"profile-img"}>
-                            <img src={MyProfile}/>
+                            <img src={MyProfile} alt={"프로필 이미지"} title={"프로필 이미지"}/>
                             <div>
                                 Twinkle
                             </div>
@@ -61,7 +61,7 @@ const ProfileSection = () => {
                     </div>
                     <div className="profile-container">
                         <div className={"profile-img"}>
-                            <img src={MyMbti} alt={"MBTI 성격유형"}/>
+                            <img src={MyMbti} alt={"MBTI 성격유형"} title={"MBTI 성격유형"}/>
                             <div>
                                 통솔자 (ENTJ)
                             </div>
