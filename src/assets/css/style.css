@@ -383,7 +383,7 @@ button {
     margin-top: 0;
 }
 
-.section:not(:has(.babylon-canvas)) .section-title::before {
+.section:not(:has(.babylon-canvas)):not(#section_home) .section-title::before {
     content: '#';
     margin-right: 0.25rem;
     color: rgba(0,0,0,0.3);
