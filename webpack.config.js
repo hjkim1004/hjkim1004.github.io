@@ -76,8 +76,6 @@ module.exports = (env, argv) => {
         plugins: [
             new webpack.ProvidePlugin({
                 process: "process/browser.js",
-            }),
-            new webpack.ProvidePlugin({
                 React: "react",
             }),
             new HtmlWebpackPlugin({
@@ -95,8 +93,12 @@ module.exports = (env, argv) => {
             new CopyWebpackPlugin({
                 patterns: [
                     {
-                        from: 'src/assets/models',  // 복사할 디렉토리
-                        to: 'models',        // 복사될 위치 (output.path 기준)
+                        from: 'src/assets/models',
+                        to: 'models',
+                    },
+                    {
+                        from: 'template/robots.txt',
+                        to: 'robots.txt',
                     },
                 ],
             }),
