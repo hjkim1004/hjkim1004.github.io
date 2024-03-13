@@ -30,15 +30,18 @@ const HomeSection = () => {
                 </Suspense>
             </div>
             <h1 className="section-title" data-aos="fade-up" data-aos-delay={100}>
-                Explore Space
+                Explore Night Sky
             </h1>
+            <div className={"section-desc"} data-aos="fade-up" data-aos-delay={200}>
+                You can explore the night sky space by grabbing the mouse and moving it.
+            </div>
             <div className={loading ? "loading" : 'loading hide'}>
-                <div>Babylon 로딩중</div>
                 <SyncLoader
                     margin={5}
                     size={10}
                     color={"rgba(255,255,255,0.8)"}
                 />
+                <div className={"loading-title"}>3D Loading...</div>
             </div>
         </section>
     );
