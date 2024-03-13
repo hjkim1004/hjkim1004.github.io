@@ -4,6 +4,7 @@
 @font-face {
     font-family: "Melliath";
     src: url("@Fonts/Melliath.ttf");
+    font-display: swap;
 }
 
 /* Main Font */
@@ -11,14 +12,17 @@
     font-family: "Sansation";
     font-weight: 300;
     src: url("@Fonts/Sansation_Light.ttf");
+    font-display: swap;
 }
 @font-face {
     font-family: "Sansation";
     font-weight: 500;
     src: url("@Fonts/Sansation_Regular.ttf");
+    font-display: swap;
 }
 @font-face {
     font-family: "Sansation";
     font-weight: 700;
     src: url("@Fonts/Sansation_Bold.ttf");
+    font-display: swap;
 }

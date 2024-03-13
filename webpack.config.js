@@ -1,6 +1,7 @@
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const {CleanWebpackPlugin} = require("clean-webpack-plugin");
 const CopyWebpackPlugin = require('copy-webpack-plugin');
+const Dotenv = require('dotenv-webpack');
 const path = require("path");
 const webpack = require("webpack");
 
@@ -81,6 +82,7 @@ module.exports = (env, argv) => {
             new HtmlWebpackPlugin({
                 template: "./template/index.html",
                 favicon: "./src/assets/images/favicon.png",
+                // template에 해당하는 파일에 dotenv 사용을 위한 설정
                 minify:
                     process.env.NODE_ENV === "production"
                         ? {
@@ -89,6 +91,8 @@ module.exports = (env, argv) => {
                         }
                         : false,
             }),
+            // dotenv 사용을 위한 설정
+            new Dotenv(),
             new CleanWebpackPlugin(),
             new CopyWebpackPlugin({
                 patterns: [
@@ -99,6 +103,10 @@ module.exports = (env, argv) => {
                     {
                         from: 'template/robots.txt',
                         to: 'robots.txt',
+                    },
+                    {
+                        from: 'template/manifest.json',
+                        to: 'manifest.json',
                     },
                 ],
             }),
