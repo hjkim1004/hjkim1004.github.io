@@ -20,7 +20,7 @@ const ProfileSection = () => {
                     navButtonsProps={{
                         style: {
                             background: "transparent",
-                            color: '#333'
+                            color: 'rgba(255,255,255,0.8)'
                         }
                     }}
                     PrevIcon={<FaChevronLeft/>}
@@ -29,11 +29,12 @@ const ProfileSection = () => {
                     indicatorIconButtonProps={{
                         style: {
                             padding: '0.5rem',
+                            color: 'rgba(255,255,255,0.8)',
                         }
                     }}
                     activeIndicatorIconButtonProps={{
                         style: {
-                            color: '#333'
+                            color: 'rgb(79 92 255)'
                         }
                     }}
                 >

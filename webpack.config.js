@@ -96,22 +96,10 @@ module.exports = (env, argv) => {
             new CleanWebpackPlugin(),
             new CopyWebpackPlugin({
                 patterns: [
-                    {
-                        from: 'src/assets/models',
-                        to: 'models',
-                    },
-                    {
-                        from: 'template/robots.txt',
-                        to: 'robots.txt',
-                    },
-                    {
-                        from: 'template/manifest.json',
-                        to: 'manifest.json',
-                    },
-                    {
-                        from: 'template/404.html',
-                        to: '404.html',
-                    },
+                    { from: 'src/assets/models', to: 'models' },
+                    { from: 'template/robots.txt', to: 'robots.txt' },
+                    { from: 'template/manifest.json', to: 'manifest.json' },
+                    { from: 'template/404.html', to: '404.html' },
                 ],
             }),
         ],

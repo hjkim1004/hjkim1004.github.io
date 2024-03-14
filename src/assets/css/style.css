@@ -384,7 +384,7 @@ button {
     margin-top: 0;
 }
 
-.section:not(:has(.babylon-canvas)):not(#section_home) .section-title::before {
+.section:not(:has(.babylon-canvas)):not(#s_home) .section-title::before {
     content: '#';
     margin-right: 0.25rem;
     color: rgba(0,0,0,0.3);
@@ -443,7 +443,7 @@ button {
 /**
   Section - Home
  */
-#section_home {
+#s_home {
     width: 100%;
     height: 9800px;
     max-height: 100vh;
@@ -455,7 +455,7 @@ button {
     align-items: center;
 }
 
-#section_home .section-title {
+#s_home .section-title {
     font-size: var(--fs-title);
     text-shadow: 0 0 5px black;
 }
@@ -474,6 +474,20 @@ button {
 }
 .loading-title {
 }
+.space-to {
+    width: fit-content;
+    position: absolute;
+    bottom: 3rem;
+    left: 3rem;
+}
+.space-to .icon {
+    transform: rotate(315deg);
+    transition: 0.5s;
+    font-size: 1.5rem;
+}
+.space-to:hover .icon {
+    transform: scale(1.05) rotate(275deg);
+}
 .scroll-down {
     position: absolute;
     bottom: 3rem;
@@ -488,7 +502,7 @@ button {
 /**
   Section - Introduction
  */
-#section_intro .section-content {
+#s_intro .section-content {
     background: rgb(0 0 0 / 5%);
     padding: 2rem;
     border-radius: 1rem;
@@ -497,11 +511,11 @@ button {
 /**
   Section - Skill
  */
-#section_skill .section-content {
+#s_skill .section-content {
     overflow: hidden;
 }
 
-#section_project {
+#s_project {
     background: url("@Images/bg_career.png") right bottom / 100px no-repeat, #ebf4ff;
 }
 
