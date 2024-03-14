@@ -26,7 +26,7 @@ const Header = () => {
 
 
     return (
-        <header className={offset > 0 ? "header scrolled" : "header"}>
+        <header className={offset > 0 ? "header scrolled" : "header"} data-aos="fade-down">
             <div className="inner">
                 <div className="logo">
                     <img src={Logo} alt="메인 로고 이미지" title={"메인 로고 이미지"}/>

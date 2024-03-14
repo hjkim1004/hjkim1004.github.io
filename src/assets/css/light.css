@@ -16,7 +16,7 @@ body[data-theme="light"] #s_intro .section-content {
 
 /* Profile */
 body[data-theme="light"] .section:has(.profile-container) {
-    background: url("@Images/bg_blue.png") center / 100% no-repeat;
+    background: url("@Images/bg_profile.png") center / 100% no-repeat;
     background-size: cover !important;
     background-attachment: fixed !important;
 }
@@ -26,8 +26,8 @@ body[data-theme="light"] .profile-box .icon {
 }
 
 body[data-theme="light"] .profile-container {
-    background: rgba(255, 255, 255, 0.75);
-    box-shadow: 1px 1px 1rem rgb(100 100 100 / 5%);
+    background: rgba(255, 255, 255, 0.85);
+    box-shadow: 1px 1px 1rem rgb(100 100 100 / 10%);
 }
 
 body[data-theme="light"] .profile-box a:hover {

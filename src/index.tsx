@@ -17,12 +17,17 @@ import MainApp from "@Pages/main";
 import SpaceApp from "@Pages/space";
 import ErrorApp from "@Pages/error";
 
-import {createBrowserRouter, createRoutesFromElements, Route, RouterProvider,} from "react-router-dom";
+import {createBrowserRouter, RouterProvider,} from "react-router-dom";
 import * as process from "process";
 
 const root = ReactDOM.createRoot(
     document.getElementById('root') as HTMLElement
 );
+const Root = () => {
+    return (
+        <div>Loading</div>
+    )
+}
 const router = createBrowserRouter([
     {
         path: "/",
@@ -45,7 +50,10 @@ root.render(
             <DevSupport ComponentPreviews={ComponentPreviews}
                         useInitialHook={useInitial}
             >
-                <RouterProvider router={router}/>
+                <RouterProvider
+                    router={router}
+                    fallbackElement={<Root/>}
+                />
             </DevSupport>
         </Provider>
     </React.StrictMode>
