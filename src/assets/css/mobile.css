@@ -92,12 +92,19 @@ span.pc {
         padding: 3rem 0 !important;
     }
 
-    #section_home {
+    #s_home {
         height: 600px;
         max-height: 80vh;
         overflow: hidden;
     }
-
+    #s_home:has(.babylon-canvas) {
+        height: 100vh;
+        max-height: 100vh;
+    }
+    .space-to {
+        left: 1.5rem;
+        bottom: 1.5rem;
+    }
     /* Profile */
     .profile-container {
         gap: 1rem;

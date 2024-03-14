@@ -1,16 +1,16 @@
-body[data-theme="light"] #section_intro {
+body[data-theme="light"] #s_intro {
     background: white;
 }
 
-body[data-theme="light"] #section_intro .section-title {
+body[data-theme="light"] #s_intro .section-title {
     color: #ff4c91;
 }
 
-body[data-theme="light"] #section_intro .section-title::before {
+body[data-theme="light"] #s_intro .section-title::before {
     color: #ffd0e2;
 }
 
-body[data-theme="light"] #section_intro .section-content {
+body[data-theme="light"] #s_intro .section-content {
     background: #fff2f7;
 }
 

@@ -33,7 +33,7 @@ const Career = (career: ICareer) => {
 }
 const CareerSection = () => {
     return (
-        <section id="section_career" className="section">
+        <section id="s_career" className="section">
             <h2 className="section-title">Career</h2>
             <div className="section-content">
                 <Timeline>

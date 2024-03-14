@@ -9,7 +9,7 @@ import Tippy from "@tippyjs/react";
 
 const ProfileSection = () => {
     return (
-        <section id="section_profile" className="section">
+        <section id="s_profile" className="section">
             <h2 className="section-title">Profile</h2>
             <div className="section-content">
                 <Carousel

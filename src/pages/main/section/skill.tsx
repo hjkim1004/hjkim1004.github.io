@@ -2,15 +2,12 @@ import React, {useEffect, useRef, useState} from 'react';
 import skills, {SkillGroup} from "@Data/skill";
 import Skill from "@Components/section/skill";
 import {Button} from "@mui/material";
-import {changeOffset} from "@Store/slice/offset";
-import {useDispatch} from "react-redux";
 
 const SkillSection = () => {
-    const dispatch = useDispatch();
     const [moreButtonHide, setMoreButtonHide] = useState(true);
     const contentRef = useRef<HTMLDivElement>(null)
 
-    const readEffect = (onEffected?: (height:number) => number) => {
+    const readEffect = (onEffected?: (height: number) => number) => {
         const {current: content} = contentRef;
 
         if (!content) return;
@@ -36,7 +33,7 @@ const SkillSection = () => {
     }, []);
 
     return (
-        <section id="section_skill" className="section">
+        <section id="s_skill" className="section">
             <h2 className="section-title">Skills</h2>
             <div className="section-content" ref={contentRef} style={{maxHeight: '700px'}}>
                 <div className="skill-container">

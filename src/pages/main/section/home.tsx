@@ -5,7 +5,7 @@ import {SyncLoader} from "react-spinners";
 
 const HomeSection = () => {
     return (
-        <section id="section_home" className="section">
+        <section id="s_home" className="section">
             <div className="section-bg"></div>
             <h1 className="section-title" data-aos="fade-up" data-aos-delay={100}>
                 {config.titleText}

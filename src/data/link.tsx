@@ -18,9 +18,9 @@ export const links: ILink[] = [
     {id: 'github', name: '깃허브', link: 'https://github.com/hjkim1004', color: '#fff', icon: (<FaGithub/>)}
 ]
 export const menus: ILink[] = [
-    {id: 'home', name: 'Home', link: '#section_home', icon: (<IoHome />)},
-    {id: 'profile', name: 'Profile', link: '#section_profile', icon: (<IoIdCard />)},
-    {id: 'career', name: 'Career', link: '#section_career'},
-    {id: 'project', name: 'Project', link: '#section_project'},
-    {id: 'skill', name: 'Skill', link: '#section_skill'},
+    {id: 'home', name: 'Home', link: '#s_home', icon: (<IoHome />)},
+    {id: 'profile', name: 'Profile', link: '#s_profile', icon: (<IoIdCard />)},
+    {id: 'career', name: 'Career', link: '#s_career'},
+    {id: 'project', name: 'Project', link: '#s_project'},
+    {id: 'skill', name: 'Skill', link: '#s_skill'},
 ]

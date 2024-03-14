@@ -23,7 +23,7 @@ const HomeSection = () => {
     });
 
     return (
-        <section id="section_home" className="section">
+        <section id="s_home" className="section">
             <div className="section-bg">
                 <Suspense>
                     <BabylonComponent/>
