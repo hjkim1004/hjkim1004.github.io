@@ -406,7 +406,40 @@ button {
     padding: 0.15rem 0.25rem;
     border-radius: 0.25rem;
 }
-
+#s_error {
+    width: 100%;
+    height: 100%;
+    background: url("@Images/galaxy.png") center / 100% no-repeat;
+    background-size: cover !important;
+    background-attachment: fixed !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#s_error .section-card {
+    background: white;
+    border-radius: 1rem;
+    overflow: hidden;
+    width: 800px;
+    min-width: 50%;
+    max-width: 80%;
+    padding: 4rem 2rem;
+}
+#s_error .section-img img {
+    max-height: 350px;
+    height: auto;
+}
+#s_error .section-title {
+    color: #1976d2;
+    margin-top: 1rem;
+}
+#s_error .section-title::before {
+    display: none;
+}
+#root:has(#s_error),
+#content:has(#s_error) {
+    height: 100%;
+}
 /**
   Section - Home
  */

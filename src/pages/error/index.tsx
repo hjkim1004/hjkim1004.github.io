@@ -1,10 +1,13 @@
 import React from 'react';
+import NotFound from "@Pages/error/404";
 
 const App = () => {
     return (
-        <div>
-            404 NOT FOUND
-        </div>
+        <>
+            <main id="content">
+                <NotFound />
+            </main>
+        </>
     );
 };
 
