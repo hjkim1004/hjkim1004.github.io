@@ -2,6 +2,7 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const {CleanWebpackPlugin} = require("clean-webpack-plugin");
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const Dotenv = require('dotenv-webpack');
+const CnameWebpackPlugin = require('cname-webpack-plugin');
 const path = require("path");
 const webpack = require("webpack");
 
@@ -101,6 +102,9 @@ module.exports = (env, argv) => {
                     { from: 'template/manifest.json', to: 'manifest.json' },
                     { from: 'template/404.html', to: '404.html' },
                 ],
+            }),
+            new CnameWebpackPlugin({
+                domain: process.env.CUSTOM_DOMAIN,
             }),
         ],
     };

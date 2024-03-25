@@ -1,6 +1,6 @@
 {
   "name": "hjkim1004.github.io",
-  "homepage": "twinklekhj.xyz",
+  "homepage": "hjkim1004.github.io",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -44,7 +44,7 @@
     "start": "webpack serve --mode=development --open --hot --progress",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "deploy": "gh-pages -d dist --cname twinklekhj.xyz"
+    "deploy": "gh-pages -d dist --cname "
   },
   "eslintConfig": {
     "extends": [
@@ -73,6 +73,7 @@
     "@types/react-router-dom": "^5.3.3",
     "babel-loader": "^9.1.3",
     "clean-webpack-plugin": "^4.0.0",
+    "cname-webpack-plugin": "^3.0.0",
     "copy-webpack-plugin": "^12.0.2",
     "css-loader": "^6.10.0",
     "dotenv": "^16.4.5",
