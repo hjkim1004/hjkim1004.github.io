@@ -1,16 +1,15 @@
 import React, {useEffect} from 'react';
-import Logo from '@Images/star-bubble.png'
 import {useDispatch, useSelector} from "react-redux";
 import {RootState} from "@Store/index";
 import {IconButton} from "@mui/material";
 import {SlMenu} from "react-icons/sl";
 import {changeOffset} from "@Store/slice/offset";
-import config from "@Data/config";
 import {menus} from "@Data/link";
 import {DrawerType, openDrawer} from "@Store/slice/drawer";
 import {BsMoonStarsFill, BsSunFill} from "react-icons/bs";
 import {changeTheme, ThemeType} from "@Store/slice/theme";
-import {LazyLoadImage} from "react-lazy-load-image-component";
+import {Link} from "react-router-dom";
+import Logo from "@Components/section/logo";
 
 const Header = () => {
     const dispatch = useDispatch()
@@ -29,15 +28,18 @@ const Header = () => {
     return (
         <header className={offset > 0 ? "header scrolled" : "header"} data-aos="fade-down">
             <div className="inner">
-                <div className="logo">
-                    <LazyLoadImage src={Logo} alt="메인 로고 이미지" title={"메인 로고 이미지"}/>
-                    <div className="title">{config.logoText}</div>
-                </div>
+                <Logo/>
                 <div className="flex-1"></div>
                 <ul className="header-nav">
                     {menus.map(menu => {
                         return (
-                            <li key={'menu_' + menu.id}><a href={menu.link}>{menu.name}</a></li>
+                            <li key={'menu_' + menu.id}>
+                                <Link to={menu.link}
+                                      title={menu.name}
+                                      translate="no"
+                                      className={menu.link === window.location.pathname ? 'active' : ''}
+                                >{menu.name}</Link>
+                            </li>
                         )
                     })}
                 </ul>

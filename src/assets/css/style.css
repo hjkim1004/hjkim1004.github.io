@@ -20,7 +20,7 @@ body {
     --size-header-logo: 55px;
     --size-header-title: 3.5rem;
     --size-header-scrolled: 120px;
-    --shadow-header-logo: 0 0 1rem rgb(248 208 113 / 50%);
+    --shadow-header-logo: 0 0 1rem rgb(248 208 113 / 25%);
     --fs-title: 4rem;
     --fs-1: 2.5rem;
     --fs-2: 2.25rem;
@@ -193,7 +193,7 @@ button {
     box-shadow: 1px 1px 2rem rgba(0, 0, 0, 0.3);
 }
 
-.logo {
+.logo a {
     height: var(--size-header-logo);
     display: flex;
     gap: 1rem;
@@ -258,12 +258,18 @@ button {
     justify-content: center;
 }
 .footer-link {
+
+.footer > * {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.footer-link {
     font-size: 2rem;
     gap: 1rem;
 }
+
 .content {
     position: relative;
 }

@@ -1,16 +1,11 @@
 import React from 'react';
 import {links} from "@Data/link";
-import Logo from "@Images/star-bubble.png";
-import config from "@Data/config";
-import {LazyLoadImage} from "react-lazy-load-image-component";
+import Logo from "@Components/section/logo";
 
 const Footer = () => {
     return (
         <footer className="footer section">
-            <div className="logo footer-logo">
-                <LazyLoadImage src={Logo} alt="메인 로고 이미지" title="메인 로고 이미지"/>
-                <div className="title">{config.logoText}</div>
-            </div>
+            <Logo />
             <div>
                 Copyright 2024. Heejeong Kim. All rights reserved.
             </div>
