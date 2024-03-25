@@ -1,5 +1,8 @@
 import SmartLibraryApp from "@Images/og_smart.png"
 import SmartLibrarySearch from "@Images/og_smart_search.png"
+import ssjobgy from "@Images/og_ssjobgy.jpg"
+import dental100year from "@Images/og_100dental.jpg"
+import barundc from "@Images/og_barundc.jpg"
 
 export interface OgData {
     url: string;
@@ -15,7 +18,7 @@ og.set("http://barundc.com", {
     "url": "http://barundc.com",
     "title": "바른치과의원",
     "description": "정확하고 안전한 디지털진료로 환자를 먼저 생각하는 바른치과는 언제나 기본에 충실하고 올바르게 진료합니다.",
-    "image": "http://barundc.com/images/og.jpg",
+    "image": barundc,
     "site_name": "바른치과의원"
 });
 
@@ -23,7 +26,7 @@ og.set("http://ssjobgy.com", {
     "url": "http://ssjobgy.com/",
     "title": "삼성제이여성의원",
     "description": "왕십리역 삼성제이여성의원은 20여 년간 축적한 임상경험과 노하우를 바탕으로 여성질환, 자궁, 난소암 검진, 여성생식기 재생 및 성형술에 특화된 산부인과입니다.",
-    "image": "http://ssjobgy.com/images/og.jpg",
+    "image": ssjobgy,
     "site_name": "삼성제이여성의원"
 });
 
@@ -31,7 +34,7 @@ og.set("http://100yeardental.com", {
     "url": "http://100yeardental.com",
     "title": "연세백세치과의원",
     "description": "자연치아를 살리기 위해 노력하고 환자를 먼저 생각하는 연세백세치과는 언제나 기본에 충실하고 올바르게 진료합니다",
-    "image": "http://100yeardental.com/images/og.jpg",
+    "image": dental100year,
     "site_name": "연세백세치과의원"
 })
 og.set("https://nlmbookcafe.com", {
