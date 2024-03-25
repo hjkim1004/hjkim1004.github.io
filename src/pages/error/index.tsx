@@ -4,13 +4,13 @@ import * as process from "process";
 
 const App = () => {
     useEffect(() => {
-        document.title = process.env.TITLE +  " | 404 NOT FOUND";
+        document.title = process.env.TITLE + " | 404 NOT FOUND";
     }, []);
 
     return (
         <>
             <main id="content">
-                <NotFound />
+                <NotFound/>
             </main>
         </>
     );

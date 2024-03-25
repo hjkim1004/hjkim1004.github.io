@@ -3,6 +3,7 @@ import {RiKakaoTalkFill} from "react-icons/ri";
 import {SiVelog} from "react-icons/si";
 import {FaGithub} from "react-icons/fa";
 import {IoHome, IoIdCard} from "react-icons/io5";
+import {LuWallpaper} from "react-icons/lu";
 
 export interface ILink {
     id: string,
@@ -18,9 +19,7 @@ export const links: ILink[] = [
     {id: 'github', name: '깃허브', link: 'https://github.com/hjkim1004', color: '#fff', icon: (<FaGithub/>)}
 ]
 export const menus: ILink[] = [
-    {id: 'home', name: 'Home', link: '#s_home', icon: (<IoHome />)},
-    {id: 'profile', name: 'Profile', link: '#s_profile', icon: (<IoIdCard />)},
-    {id: 'career', name: 'Career', link: '#s_career'},
-    {id: 'project', name: 'Project', link: '#s_project'},
-    {id: 'skill', name: 'Skill', link: '#s_skill'},
+    {id: 'home', name: 'Home', link: '/', icon: (<IoHome />)},
+    {id: 'space', name: 'Wallpaper', link: '/space', icon: (<LuWallpaper />)},
+    {id: 'resume', name: 'Resume', link: '/resume', icon: (<IoIdCard />)},
 ]

@@ -16,6 +16,22 @@ span.pc {
     .header ul.header-nav {
         width: 500px;
     }
+    .profile-box {
+        width: calc(50% - 1rem / 2)
+    }
+
+    .profile-mbti .profile-progress {
+        width: 150px;
+    }
+
+    .skill-box {
+        width: 8rem;
+        height: 8rem;
+    }
+    .skill-box .icon {
+        font-size: 2.5rem;
+        max-height: 2.5rem;
+    }
 }
 
 
@@ -31,9 +47,11 @@ span.pc {
     .header button {
         margin-left: 0;
     }
-
-    .profile-box {
-        width: calc(50% - 1rem / 2)
+    .profile-container {
+        flex-direction: column;
+    }
+    .profile-mbti .profile-progress {
+        width: 250px;
     }
 }
 
@@ -97,18 +115,17 @@ span.pc {
         max-height: 80vh;
         overflow: hidden;
     }
-    #s_home:has(.babylon-canvas) {
-        height: 100vh;
-        max-height: 100vh;
-    }
     .space-to {
         left: 1.5rem;
         bottom: 1.5rem;
     }
+    .scroll-down {
+        font-size: 1rem !important;
+    }
     /* Profile */
     .profile-container {
         gap: 1rem;
-        padding: 2rem 1rem;
+        padding: 3rem 2rem;
         flex-direction: column;
     }
     .profile-img img {
@@ -163,5 +180,15 @@ span.pc {
         --size-header-logo: 40px;
         --size-header-scrolled: 80px;
         --size-header-title: 2.5rem;
+    }
+    .profile-container {
+        padding: 2rem 1rem;
+    }
+
+    .og-container {
+        height: 80px;
+    }
+    .og-container .og-info p {
+        display: none;
     }
 }

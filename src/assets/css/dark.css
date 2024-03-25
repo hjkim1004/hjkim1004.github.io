@@ -27,3 +27,7 @@ body[data-theme="dark"] .skill-box:hover {
     background: white;
     color: #333;
 }
+
+body[data-theme="dark"]  #s_project {
+    background: url("@Images/bg_career.png") right bottom / 40% no-repeat, #444;
+}

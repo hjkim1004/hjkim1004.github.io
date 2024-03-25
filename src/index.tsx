@@ -17,6 +17,7 @@ import {ComponentPreviews, useInitial} from "./dev";
 import MainApp from "@Pages/main";
 import SpaceApp from "@Pages/space";
 import ErrorApp from "@Pages/error";
+import ResumeApp from "@Pages/resume";
 
 import {createBrowserRouter, RouterProvider,} from "react-router-dom";
 import * as process from "process";
@@ -37,6 +38,10 @@ const router = createBrowserRouter([
     {
         path: "/space",
         element: <SpaceApp />,
+    },
+    {
+        path: "/resume",
+        element: <ResumeApp />,
     },
     {
         path: "*",

@@ -25,7 +25,7 @@ const HomeSection = () => {
     return (
         <section id="s_home" className="section">
             <div className="section-bg">
-                <Suspense>
+                <Suspense fallback={<canvas className="babylon-canvas"/>}>
                     <BabylonComponent/>
                 </Suspense>
             </div>

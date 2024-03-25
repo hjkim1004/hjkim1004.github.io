@@ -42,7 +42,7 @@ const Babylon = (props: IBabylonInterface) => {
             true
         );
 
-        const createScene = () => {
+        const createScene = (canvas: HTMLCanvasElement) => {
             // 워커 사용을 위한 WorkerLoader 생성
             const scene = new Scene(engine);
             scene.clearColor = new Color4(0,0,0,0);
@@ -65,12 +65,13 @@ const Babylon = (props: IBabylonInterface) => {
                 newMeshes[0].position.y = 0;
                 newMeshes[0].scaling = new Vector3(80, 80, 80);
 
+                canvas.className = 'babylon-canvas babylon-loaded';
                 props.onMeshLoaded?.();
             })
             return scene
         }
 
-        const scene = createScene();
+        const scene = createScene(canvas);
         if (scene.isReady()) {
             props.onSceneReady?.(scene);
         } else {

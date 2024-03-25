@@ -239,7 +239,6 @@ const skills: ISKill[] = [
     {
         id: 'git',
         name: 'Git',
-        rating: 2,
         icon: (<FaGitAlt/>),
         color: '#e84d31',
         group: SkillGroup.VCS

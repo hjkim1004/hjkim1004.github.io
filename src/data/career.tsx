@@ -5,6 +5,11 @@ import NicomLogo from '@Images/company_nicom.svg'
 import FillaDesignLogo from '@Images/company_filladesign.png'
 import KicLogo from '@Images/company_kic.png'
 
+import NicomContent from "@Pages/main/section/career/nicom";
+import FillaDesignContent from "@Pages/main/section/career/filladesign";
+import NewLifeMissionContent from "@Pages/main/section/career/newlifemission";
+import KicContent from "@Pages/main/section/career/kic";
+
 export interface ICareer {
     id: string;
     name: string;
@@ -30,8 +35,8 @@ const careers: ICareer[] = [
         dotColor: 'primary',
         logo: (<LazyLoadImage src={NicomLogo} alt={"Nicom 로고"} title={"Nicom 로고"}/>),
         logoColor: '#fff',
-        position: '웹 솔루션 개발자',
-        content: '',
+        position: '웹 솔루션 개발',
+        content: <NicomContent/>,
     },
     {
         id: 'filladesign',
@@ -43,8 +48,8 @@ const careers: ICareer[] = [
         dotColor: 'primary',
         logo: (<LazyLoadImage src={FillaDesignLogo} alt={"FillaDesign 로고"} title={"FillaDesign 로고"}/>),
         logoColor: '#060606',
-        position: '웹 퍼블리셔',
-        content: '',
+        position: '웹 퍼블리싱',
+        content: <FillaDesignContent/>,
     },
     {
         id: 'newlifemission',
@@ -53,8 +58,8 @@ const careers: ICareer[] = [
         type: '프리랜서',
         period: [new Date('2023.11.22'), new Date('2023.12.04')],
         dotColor: 'primary',
-        position: '웹 퍼블리셔',
-        content: '',
+        position: '웹 퍼블리싱',
+        content: <NewLifeMissionContent/>,
     },
     {
         id: 'kic',
@@ -67,7 +72,7 @@ const careers: ICareer[] = [
         logo: (<LazyLoadImage src={KicLogo} alt={"KIC 로고"} title={"KIC 로고"}/>),
         logoColor: '#333',
         position: 'Atlassian 솔루션 지원',
-        content: '',
+        content: <KicContent />,
     },
     {
         id: 'academy',

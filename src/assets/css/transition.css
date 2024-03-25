@@ -9,6 +9,14 @@
  */
 
 
+@keyframes bound-right {
+    0% {
+        transform: translateX(5px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
 
 .transition-container {
     perspective: 800px;
@@ -21,12 +29,12 @@
 
 @keyframes swipeUp {
     from {
-        transform: translate3d(0,100vh,0);
+        transform: translate3d(0, 100vh, 0);
         opacity: 0;
     }
 
     to {
-        transform: translate3d(0,0vh,0);
+        transform: translate3d(0, 0vh, 0);
         opacity: 1;
     }
 }
@@ -41,12 +49,12 @@
 
 @keyframes swipeLeft {
     from {
-        transform: translate3d(-1000px,0,0);
+        transform: translate3d(-1000px, 0, 0);
         opacity: 0;
     }
 
     to {
-        transform: translate3d(0,0,0);
+        transform: translate3d(0, 0, 0);
         opacity: 1;
     }
 }
@@ -61,12 +69,12 @@
 
 @keyframes swipeRight {
     from {
-        transform: translate3d(1000px,0,0);
+        transform: translate3d(1000px, 0, 0);
         opacity: 0;
     }
 
     to {
-        transform: translate3d(0,0,0);
+        transform: translate3d(0, 0, 0);
         opacity: 1;
     }
 }
@@ -79,15 +87,14 @@
 }
 
 
-
 @keyframes swipeDown {
     from {
-        transform: translate3d(0,-100vh,0);
+        transform: translate3d(0, -100vh, 0);
         opacity: 0;
     }
 
     to {
-        transform: translate3d(0,0,0);
+        transform: translate3d(0, 0, 0);
         opacity: 1;
     }
 }
@@ -123,7 +130,7 @@
     }
 
     to {
-        transform:  scale(1);
+        transform: scale(1);
     }
 }
 
@@ -140,7 +147,7 @@
     }
 
     to {
-        transform:  scale(1);
+        transform: scale(1);
     }
 }
 
@@ -157,7 +164,7 @@
     }
 
     to {
-        transform:  scale(1);
+        transform: scale(1);
     }
 }
 
@@ -169,14 +176,13 @@
 }
 
 
-
 @keyframes dropIn {
     from {
         transform: scale(4) translateY(400px);
     }
 
     to {
-        transform:  scale(1);
+        transform: scale(1);
     }
 }
 
@@ -194,7 +200,7 @@
     }
 
     to {
-        transform:  scale(1);
+        transform: scale(1);
     }
 }
 
@@ -212,7 +218,7 @@
     }
 
     to {
-        transform:  scale(1);
+        transform: scale(1);
     }
 }
 
@@ -267,14 +273,13 @@
 }
 
 
-
 @keyframes flipInY {
     from {
-        transform:  rotateY(90deg);
+        transform: rotateY(90deg);
     }
 
     70% {
-        transform:  rotateY(-10deg);
+        transform: rotateY(-10deg);
     }
 
     to {
@@ -291,11 +296,11 @@
 
 @keyframes flipInYReverse {
     from {
-        transform:  rotateY(-90deg);
+        transform: rotateY(-90deg);
     }
 
     70% {
-        transform:  rotateY(10deg);
+        transform: rotateY(10deg);
     }
 
     to {
@@ -313,7 +318,7 @@
 
 @keyframes rotateIn {
     from {
-        transform: scale(.1)  rotate(180deg);
+        transform: scale(.1) rotate(180deg);
     }
 
     70% {
@@ -333,10 +338,9 @@
 }
 
 
-
 @keyframes rotateInReverse {
     from {
-        transform: scale(.1)  rotate(-180deg);
+        transform: scale(.1) rotate(-180deg);
     }
 
     70% {

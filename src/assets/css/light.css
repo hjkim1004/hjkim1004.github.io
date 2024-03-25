@@ -20,9 +20,11 @@ body[data-theme="light"] .section:has(.profile-container) {
     background-size: cover !important;
     background-attachment: fixed !important;
 }
-
+body[data-theme="light"] .section:has(.profile-container) .section-title {
+    color: rgba(0, 0, 0, 0.7);
+}
 body[data-theme="light"] .profile-box .icon {
-    color: #4f5cff;
+    color: var(--color-blue);
 }
 
 body[data-theme="light"] .profile-container {
