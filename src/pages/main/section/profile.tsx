@@ -1,7 +1,7 @@
 import React from 'react';
 import {mbti, profiles} from "@Data/config";
 import MyProfile from "@Images/my_profile.png"
-import MyMbti from "@Images/my_mbti.svg"
+import MyMbti from "@Images/my_mbti.png"
 import Carousel from "react-material-ui-carousel";
 import {LinearProgress} from "@mui/material";
 import {FaChevronLeft, FaChevronRight, FaStar} from "react-icons/fa6";
