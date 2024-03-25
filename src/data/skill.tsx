@@ -32,13 +32,14 @@ import {LazyLoadImage} from "react-lazy-load-image-component";
 
 export const SkillGroup = {
     CORE: 'core',
-    BACK: 'back',
     FRONT: 'front',
     SERVER: 'server',
     RDBMS: 'rdbms',
     NOSQL: 'nosql',
     IDE: 'tool',
     VCS: 'vcs',
+}
+const SkillGroupExternal = {
     APP: 'app',
     OTHER: 'other'
 }
@@ -96,19 +97,11 @@ const skills: ISKill[] = [
         color: '#68bd45',
         group: SkillGroup.CORE
     },
-
-    /* Back End */
     {
         id: 'springsecurity',
         name: 'Spring Security',
         icon: (<LazyLoadImage src={SpringSecurityIcon} alt={"Spring Security Icon"} title={"Spring Security Icon"}/>),
-        group: SkillGroup.BACK
-    },
-    {
-        id: 'activemq',
-        name: 'ActiveMQ',
-        icon: (<LazyLoadImage src={ActiveMQIcon} alt={"ActiveMQ Icon"} title={"ActiveMQ Icon"}/>),
-        group: SkillGroup.BACK
+        group: SkillGroup.CORE
     },
 
     /* Front End */
@@ -258,35 +251,37 @@ const skills: ISKill[] = [
         color: '#000',
         group: SkillGroup.VCS
     },
+];
 
+const external: ISKill[] = [
     /* App */
     {
         id: 'kotlin',
         name: 'kotlin',
         rating: 1,
         icon: (<LazyLoadImage src={KotlinIcon} alt={"Kotlin Icon"} title={"Kotlin Icon"}/>),
-        group: SkillGroup.APP
+        group: SkillGroupExternal.APP
     },
     {
         id: 'android',
         name: 'Android Studio',
         rating: 1,
         icon: (<LazyLoadImage src={AndroidStudioIcon} alt={"Android Studio Icon"} title={"Android Studio Icon"}/>),
-        group: SkillGroup.APP
+        group: SkillGroupExternal.APP
     },
     {
         id: 'swift',
         name: 'swift',
         rating: 1,
         icon: (<LazyLoadImage src={SwiftIcon} alt={"Swift Icon"} title={"Swift Icon"}/>),
-        group: SkillGroup.APP
+        group: SkillGroupExternal.APP
     },
     {
         id: 'xcode',
         name: 'xcode',
         rating: 1,
         icon: (<LazyLoadImage src={XCodeIcon} alt={"XCode Icon"} title={"XCode Icon"}/>),
-        group: SkillGroup.APP
+        group: SkillGroupExternal.APP
     },
 
     /* Other */
@@ -295,26 +290,26 @@ const skills: ISKill[] = [
         name: 'PHP',
         rating: 1,
         icon: (<LazyLoadImage src={PhpIcon} alt={"Php Icon"} title={"Php Icon"}/>),
-        group: SkillGroup.OTHER
+        group: SkillGroupExternal.OTHER
     },
     {
         id: 'phpstorm',
         name: 'PhpStorm',
         icon: (<LazyLoadImage src={PhpStormIcon} alt={"PhpStorm Icon"} title={"PhpStorm Icon"}/>),
-        group: SkillGroup.OTHER
+        group: SkillGroupExternal.OTHER
     },
     {
         id: 'vscode',
         name: 'VS Code',
         icon: (<LazyLoadImage src={VSCodeIcon} alt={"VSCode Icon"} title={"VSCode Icon"}/>),
-        group: SkillGroup.OTHER
+        group: SkillGroupExternal.OTHER
     },
 
     {
         id: 'figma',
         name: 'figma',
         icon: (<LazyLoadImage src={FigmaIcon} alt={"Figma Icon"} title={"Figma Icon"}/>),
-        group: SkillGroup.OTHER
+        group: SkillGroupExternal.OTHER
     },
-];
+]
 export default skills;
