@@ -41,8 +41,8 @@ const ProfileSection = () => {
                 >
                     <div className="profile-container">
                         <div className={"profile-img"}>
-                            <LazyLoadImage src={MyProfile} alt={"프로필 이미지"} title={"프로필 이미지"}/>
-                            <div>
+                            <LazyLoadImage height={160} src={MyProfile} alt={"프로필 이미지"} title={"프로필 이미지"}/>
+                            <div translate="no">
                                 Twinkle
                             </div>
                         </div>
@@ -63,7 +63,7 @@ const ProfileSection = () => {
                     </div>
                     <div className="profile-container">
                         <div className={"profile-img"}>
-                            <LazyLoadImage src={MyMbti} alt={"MBTI 성격유형"} title={"MBTI 성격유형"}/>
+                            <LazyLoadImage height={160} src={MyMbti} alt={"MBTI 성격유형"} title={"MBTI 성격유형"}/>
                             <div>
                                 통솔자 (ENTJ)
                             </div>
