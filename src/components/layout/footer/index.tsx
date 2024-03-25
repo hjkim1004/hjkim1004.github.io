@@ -2,12 +2,13 @@ import React from 'react';
 import {links} from "@Data/link";
 import Logo from "@Images/star-bubble.png";
 import config from "@Data/config";
+import {LazyLoadImage} from "react-lazy-load-image-component";
 
 const Footer = () => {
     return (
         <footer className="footer section">
             <div className="logo footer-logo">
-                <img src={Logo} alt="메인 로고 이미지" title="메인 로고 이미지"/>
+                <LazyLoadImage src={Logo} alt="메인 로고 이미지" title="메인 로고 이미지"/>
                 <div className="title">{config.logoText}</div>
             </div>
             <div>

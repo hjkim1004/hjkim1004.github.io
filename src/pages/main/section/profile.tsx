@@ -6,6 +6,7 @@ import Carousel from "react-material-ui-carousel";
 import {LinearProgress} from "@mui/material";
 import {FaChevronLeft, FaChevronRight, FaStar} from "react-icons/fa6";
 import Tippy from "@tippyjs/react";
+import {LazyLoadImage} from "react-lazy-load-image-component";
 
 const ProfileSection = () => {
     return (
@@ -40,7 +41,7 @@ const ProfileSection = () => {
                 >
                     <div className="profile-container">
                         <div className={"profile-img"}>
-                            <img src={MyProfile} alt={"프로필 이미지"} title={"프로필 이미지"}/>
+                            <LazyLoadImage src={MyProfile} alt={"프로필 이미지"} title={"프로필 이미지"}/>
                             <div>
                                 Twinkle
                             </div>
@@ -62,7 +63,7 @@ const ProfileSection = () => {
                     </div>
                     <div className="profile-container">
                         <div className={"profile-img"}>
-                            <img src={MyMbti} alt={"MBTI 성격유형"} title={"MBTI 성격유형"}/>
+                            <LazyLoadImage src={MyMbti} alt={"MBTI 성격유형"} title={"MBTI 성격유형"}/>
                             <div>
                                 통솔자 (ENTJ)
                             </div>

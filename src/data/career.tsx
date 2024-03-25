@@ -1,4 +1,6 @@
 import {ReactNode} from "react";
+import {LazyLoadImage} from "react-lazy-load-image-component";
+
 import NicomLogo from '@Images/company_nicom.svg'
 import FillaDesignLogo from '@Images/company_filladesign.png'
 import KicLogo from '@Images/company_kic.png'
@@ -26,7 +28,7 @@ const careers: ICareer[] = [
         period: [new Date('2020.07.13'), new Date('2023.11.17')],
         link: 'http://enicom.co.kr/',
         dotColor: 'primary',
-        logo: (<img src={NicomLogo} alt={"Nicom 로고"} title={"Nicom 로고"}/>),
+        logo: (<LazyLoadImage src={NicomLogo} alt={"Nicom 로고"} title={"Nicom 로고"}/>),
         logoColor: '#fff',
         position: '웹 솔루션 개발자',
         content: '',
@@ -39,7 +41,7 @@ const careers: ICareer[] = [
         period: [new Date('2024.02.01'), new Date('2024.02.29')],
         link: 'http://www.pillardesign.co.kr/',
         dotColor: 'primary',
-        logo: (<img src={FillaDesignLogo} alt={"FillaDesign 로고"} title={"FillaDesign 로고"}/>),
+        logo: (<LazyLoadImage src={FillaDesignLogo} alt={"FillaDesign 로고"} title={"FillaDesign 로고"}/>),
         logoColor: '#060606',
         position: '웹 퍼블리셔',
         content: '',
@@ -62,7 +64,7 @@ const careers: ICareer[] = [
         period: [new Date('2019.09.01'), new Date('2019.12.31')],
         link: 'https://kicco.com/',
         dotColor: 'secondary',
-        logo: (<img src={KicLogo} alt={"KIC 로고"} title={"KIC 로고"}/>),
+        logo: (<LazyLoadImage src={KicLogo} alt={"KIC 로고"} title={"KIC 로고"}/>),
         logoColor: '#333',
         position: 'Atlassian 솔루션 지원',
         content: '',

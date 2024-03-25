@@ -1,12 +1,14 @@
 import React from 'react';
 import NotFoundImage from '@Images/error_404.jpg'
 import {Button} from "@mui/material";
+import {LazyLoadImage} from "react-lazy-load-image-component";
+
 const NotFound = () => {
     return (
         <section className={"section"} id={"s_error"}>
             <div className={"section-card"}>
                 <div className={"section-img"}>
-                    <img src={NotFoundImage} alt={"404 NOT FOUND"} title={"404 NOT FOUND"}/>
+                    <LazyLoadImage src={NotFoundImage} alt={"404 NOT FOUND"} title={"404 NOT FOUND"}/>
                 </div>
                 <h1 className={"section-title"}>
                     Oops! Page Not Found</h1>

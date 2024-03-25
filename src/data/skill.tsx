@@ -28,6 +28,7 @@ import SwiftIcon from '@Images/tech_swift.svg';
 import XCodeIcon from '@Images/tech_xcode.svg';
 import FigmaIcon from '@Images/tech_figma.svg';
 import {FcLinux} from "react-icons/fc";
+import {LazyLoadImage} from "react-lazy-load-image-component";
 
 export const SkillGroup = {
     CORE: 'core',
@@ -61,7 +62,7 @@ const skills: ISKill[] = [
         name: 'Java',
         rating: 2,
         color: '#de0a17',
-        icon: (<img src={JavaIcon} alt={"Java Icon"} title={"Java Icon"}/>),
+        icon: (<LazyLoadImage src={JavaIcon} alt={"Java Icon"} title={"Java Icon"}/>),
         group: SkillGroup.CORE
     },
     {
@@ -84,7 +85,7 @@ const skills: ISKill[] = [
         id: 'mybatis',
         name: 'MyBatis',
         rating: 2,
-        icon: (<img src={MyBatisIcon} alt={"MyBatis Icon"} title={"MyBatis Icon"}/>),
+        icon: (<LazyLoadImage src={MyBatisIcon} alt={"MyBatis Icon"} title={"MyBatis Icon"}/>),
         group: SkillGroup.CORE
     },
     {
@@ -100,13 +101,13 @@ const skills: ISKill[] = [
     {
         id: 'springsecurity',
         name: 'Spring Security',
-        icon: (<img src={SpringSecurityIcon} alt={"Spring Security Icon"} title={"Spring Security Icon"}/>),
+        icon: (<LazyLoadImage src={SpringSecurityIcon} alt={"Spring Security Icon"} title={"Spring Security Icon"}/>),
         group: SkillGroup.BACK
     },
     {
         id: 'activemq',
         name: 'ActiveMQ',
-        icon: (<img src={ActiveMQIcon} alt={"ActiveMQ Icon"} title={"ActiveMQ Icon"}/>),
+        icon: (<LazyLoadImage src={ActiveMQIcon} alt={"ActiveMQ Icon"} title={"ActiveMQ Icon"}/>),
         group: SkillGroup.BACK
     },
 
@@ -155,7 +156,7 @@ const skills: ISKill[] = [
         id: 'react',
         name: 'React',
         rating: 1.5,
-        icon: (<img src={ReactIcon} alt={"React Icon"} title={"React Icon"}/>),
+        icon: (<LazyLoadImage src={ReactIcon} alt={"React Icon"} title={"React Icon"}/>),
         color: '#61dbfb',
         group: SkillGroup.FRONT
     },
@@ -164,13 +165,13 @@ const skills: ISKill[] = [
     {
         id: 'apache',
         name: 'Apache Web Server',
-        icon: (<img src={ApacheIcon} alt={"Apache Icon"} title={"Apache Icon"}/>),
+        icon: (<LazyLoadImage src={ApacheIcon} alt={"Apache Icon"} title={"Apache Icon"}/>),
         group: SkillGroup.SERVER
     },
     {
         id: 'tomcat',
         name: 'Tomcat',
-        icon: (<img src={TomcatIcon} alt={"Tomcat Icon"} title={"Tomcat Icon"}/>),
+        icon: (<LazyLoadImage src={TomcatIcon} alt={"Tomcat Icon"} title={"Tomcat Icon"}/>),
         group: SkillGroup.SERVER
     },
     {
@@ -182,7 +183,7 @@ const skills: ISKill[] = [
     {
         id: 'githubactions',
         name: 'GitHub Actions',
-        icon: (<img src={GitHubActionIcon} alt={"GitHub Actions Icon"} title={"GitHub Actions Icon"}/>),
+        icon: (<LazyLoadImage src={GitHubActionIcon} alt={"GitHub Actions Icon"} title={"GitHub Actions Icon"}/>),
         group: SkillGroup.SERVER
     },
 
@@ -190,13 +191,13 @@ const skills: ISKill[] = [
     {
         id: 'postgres',
         name: 'PostgreSQL',
-        icon: (<img src={PostgresIcon} alt={"React Icon"} title={"React Icon"}/>),
+        icon: (<LazyLoadImage src={PostgresIcon} alt={"React Icon"} title={"React Icon"}/>),
         group: SkillGroup.RDBMS
     },
     {
         id: 'mssql',
         name: 'SQL Server',
-        icon: (<img src={SqlServerIcon} alt={"SQL Server Icon"} title={"SQL Server Icon"}/>),
+        icon: (<LazyLoadImage src={SqlServerIcon} alt={"SQL Server Icon"} title={"SQL Server Icon"}/>),
         group: SkillGroup.RDBMS
     },
     {
@@ -217,7 +218,7 @@ const skills: ISKill[] = [
         id: 'mongo',
         name: 'MongoDB',
         rating: 1,
-        icon: (<img src={MongoDBIcon} alt={"MongoDB Icon"} title={"MongoDB Icon"}/>),
+        icon: (<LazyLoadImage src={MongoDBIcon} alt={"MongoDB Icon"} title={"MongoDB Icon"}/>),
         group: SkillGroup.NOSQL
     },
 
@@ -225,19 +226,19 @@ const skills: ISKill[] = [
     {
         id: 'sts',
         name: 'STS',
-        icon: (<img src={StsIcon} alt={"STS Icon"} title={"STS Icon"}/>),
+        icon: (<LazyLoadImage src={StsIcon} alt={"STS Icon"} title={"STS Icon"}/>),
         group: SkillGroup.IDE
     },
     {
         id: 'intellij',
         name: 'IntelliJ',
-        icon: (<img src={IntelliJIcon} alt={"IntelliJ Icon"} title={"IntelliJ Icon"}/>),
+        icon: (<LazyLoadImage src={IntelliJIcon} alt={"IntelliJ Icon"} title={"IntelliJ Icon"}/>),
         group: SkillGroup.IDE
     },
     {
         id: 'webstorm',
         name: 'WebStorm',
-        icon: (<img src={WebStormIcon} alt={"WebStorm Icon"} title={"WebStorm Icon"}/>),
+        icon: (<LazyLoadImage src={WebStormIcon} alt={"WebStorm Icon"} title={"WebStorm Icon"}/>),
         group: SkillGroup.IDE
     },
 
@@ -263,28 +264,28 @@ const skills: ISKill[] = [
         id: 'kotlin',
         name: 'kotlin',
         rating: 1,
-        icon: (<img src={KotlinIcon} alt={"Kotlin Icon"} title={"Kotlin Icon"}/>),
+        icon: (<LazyLoadImage src={KotlinIcon} alt={"Kotlin Icon"} title={"Kotlin Icon"}/>),
         group: SkillGroup.APP
     },
     {
         id: 'android',
         name: 'Android Studio',
         rating: 1,
-        icon: (<img src={AndroidStudioIcon} alt={"Android Studio Icon"} title={"Android Studio Icon"}/>),
+        icon: (<LazyLoadImage src={AndroidStudioIcon} alt={"Android Studio Icon"} title={"Android Studio Icon"}/>),
         group: SkillGroup.APP
     },
     {
         id: 'swift',
         name: 'swift',
         rating: 1,
-        icon: (<img src={SwiftIcon} alt={"Swift Icon"} title={"Swift Icon"}/>),
+        icon: (<LazyLoadImage src={SwiftIcon} alt={"Swift Icon"} title={"Swift Icon"}/>),
         group: SkillGroup.APP
     },
     {
         id: 'xcode',
         name: 'xcode',
         rating: 1,
-        icon: (<img src={XCodeIcon} alt={"XCode Icon"} title={"XCode Icon"}/>),
+        icon: (<LazyLoadImage src={XCodeIcon} alt={"XCode Icon"} title={"XCode Icon"}/>),
         group: SkillGroup.APP
     },
 
@@ -293,26 +294,26 @@ const skills: ISKill[] = [
         id: 'php',
         name: 'PHP',
         rating: 1,
-        icon: (<img src={PhpIcon} alt={"Php Icon"} title={"Php Icon"}/>),
+        icon: (<LazyLoadImage src={PhpIcon} alt={"Php Icon"} title={"Php Icon"}/>),
         group: SkillGroup.OTHER
     },
     {
         id: 'phpstorm',
         name: 'PhpStorm',
-        icon: (<img src={PhpStormIcon} alt={"PhpStorm Icon"} title={"PhpStorm Icon"}/>),
+        icon: (<LazyLoadImage src={PhpStormIcon} alt={"PhpStorm Icon"} title={"PhpStorm Icon"}/>),
         group: SkillGroup.OTHER
     },
     {
         id: 'vscode',
         name: 'VS Code',
-        icon: (<img src={VSCodeIcon} alt={"VSCode Icon"} title={"VSCode Icon"}/>),
+        icon: (<LazyLoadImage src={VSCodeIcon} alt={"VSCode Icon"} title={"VSCode Icon"}/>),
         group: SkillGroup.OTHER
     },
 
     {
         id: 'figma',
         name: 'figma',
-        icon: (<img src={FigmaIcon} alt={"Figma Icon"} title={"Figma Icon"}/>),
+        icon: (<LazyLoadImage src={FigmaIcon} alt={"Figma Icon"} title={"Figma Icon"}/>),
         group: SkillGroup.OTHER
     },
 ];

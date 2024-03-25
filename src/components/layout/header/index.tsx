@@ -10,6 +10,7 @@ import {menus} from "@Data/link";
 import {DrawerType, openDrawer} from "@Store/slice/drawer";
 import {BsMoonStarsFill, BsSunFill} from "react-icons/bs";
 import {changeTheme, ThemeType} from "@Store/slice/theme";
+import {LazyLoadImage} from "react-lazy-load-image-component";
 
 const Header = () => {
     const dispatch = useDispatch()
@@ -29,7 +30,7 @@ const Header = () => {
         <header className={offset > 0 ? "header scrolled" : "header"} data-aos="fade-down">
             <div className="inner">
                 <div className="logo">
-                    <img src={Logo} alt="메인 로고 이미지" title={"메인 로고 이미지"}/>
+                    <LazyLoadImage src={Logo} alt="메인 로고 이미지" title={"메인 로고 이미지"}/>
                     <div className="title">{config.logoText}</div>
                 </div>
                 <div className="flex-1"></div>
@@ -41,16 +42,16 @@ const Header = () => {
                     })}
                 </ul>
                 <IconButton className="btn-icon" onClick={() => {
-                    if(theme === ThemeType.DARK){
+                    if (theme === ThemeType.DARK) {
                         dispatch(changeTheme(ThemeType.LIGHT))
                     } else {
                         dispatch(changeTheme(ThemeType.DARK))
                     }
                 }}>
                     {theme === ThemeType.DARK ? (
-                        <BsSunFill />
-                    ): (
-                        <BsMoonStarsFill />
+                        <BsSunFill/>
+                    ) : (
+                        <BsMoonStarsFill/>
                     )}
 
                 </IconButton>
