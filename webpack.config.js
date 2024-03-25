@@ -101,6 +101,7 @@ module.exports = (env, argv) => {
                     { from: 'template/robots.txt', to: 'robots.txt' },
                     { from: 'template/manifest.json', to: 'manifest.json' },
                     { from: 'template/404.html', to: '404.html' },
+                    { from: 'template/og.png', to: 'og.png' },
                 ],
             }),
             new CnameWebpackPlugin({

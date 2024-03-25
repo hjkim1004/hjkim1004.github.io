@@ -6,6 +6,7 @@ import {
     TimelineDot,
     TimelineItem,
     TimelineOppositeContent,
+    timelineOppositeContentClasses,
     TimelineSeparator
 } from "@mui/lab";
 import careers, {ICareer} from "@Data/career";
@@ -14,7 +15,7 @@ import {DateUtil} from "@Utils/date";
 const Career = (career: ICareer) => {
     return (
         <div className={"career-section"}>
-            <div className={"career-title"}>{career.name}</div>
+            <h3 className={"career-title"}>{career.name}</h3>
             <div className={"career-pos"}>{career.company ? '직무' : '과정'}: <b>{career.position}</b></div>
             <div className={"mobile"}>
                 {career.type ? (
@@ -36,7 +37,13 @@ const CareerSection = () => {
         <section id="s_career" className="section">
             <h2 className="section-title">Career</h2>
             <div className="section-content">
-                <Timeline>
+                <Timeline sx={{
+                    [`& .${timelineOppositeContentClasses.root}`]: {
+                        flex: 0.3,
+                        fontSize: 'var(--fs-6)',
+                        lineHeight: 1.25
+                    },
+                }}>
                     {careers.map((career, index) => (
                         <TimelineItem key={"career-" + career.id} data-aos="fade-up"
                                       data-aos-delay={(index + 1) * 100}>

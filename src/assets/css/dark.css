@@ -1,6 +1,6 @@
 /* Layout */
 body[data-theme="dark"] .flop-top {
-    background: #000;
+    background: #000 !important;
 }
 body[data-theme="dark"] .section {
     background: #555;
