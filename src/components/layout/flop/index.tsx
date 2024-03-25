@@ -3,6 +3,7 @@ import {links} from "@Data/link";
 import {IoIosArrowUp} from "react-icons/io";
 import {useSelector} from "react-redux";
 import {RootState} from "@Store/index";
+import {Button} from "@mui/material";
 
 const FlopMenu = () => {
     const offset = useSelector((state: RootState) => state.offset.value)
@@ -22,11 +23,11 @@ const FlopMenu = () => {
                     )
                 })}
             </ul>
-            <div className="flop-top">
-                <a href="#">
-                    <IoIosArrowUp/>
-                </a>
-            </div>
+            <Button className="flop-top" onClick={(e) => {
+                window.scrollTo(0, 0);
+            }}>
+                <IoIosArrowUp/>
+            </Button>
         </div>
     );
 };
