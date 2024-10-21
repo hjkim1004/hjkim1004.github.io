@@ -38,8 +38,6 @@ export const SkillGroup = {
     NOSQL: 'nosql',
     IDE: 'tool',
     VCS: 'vcs',
-}
-const SkillGroupExternal = {
     APP: 'app',
     OTHER: 'other'
 }
@@ -61,7 +59,6 @@ const skills: ISKill[] = [
     {
         id: 'java',
         name: 'Java',
-        rating: 2,
         color: '#de0a17',
         icon: (<LazyLoadImage src={JavaIcon} alt={"Java Icon"} title={"Java Icon"}/>),
         group: SkillGroup.CORE
@@ -69,7 +66,6 @@ const skills: ISKill[] = [
     {
         id: 'spring',
         name: 'Spring',
-        rating: 2,
         color: '#5cb230',
         icon: (<SiSpring/>),
         group: SkillGroup.CORE
@@ -77,7 +73,6 @@ const skills: ISKill[] = [
     {
         id: 'springboot',
         name: 'Spring Boot',
-        rating: 2,
         icon: (<SiSpringboot/>),
         color: '#68bd45',
         group: SkillGroup.CORE
@@ -85,14 +80,12 @@ const skills: ISKill[] = [
     {
         id: 'mybatis',
         name: 'MyBatis',
-        rating: 2,
         icon: (<LazyLoadImage src={MyBatisIcon} alt={"MyBatis Icon"} title={"MyBatis Icon"}/>),
         group: SkillGroup.CORE
     },
     {
         id: 'jpa',
         name: 'JPA + QueryDSL',
-        rating: 1.5,
         icon: (<FaDatabase/>),
         color: '#68bd45',
         group: SkillGroup.CORE
@@ -108,7 +101,6 @@ const skills: ISKill[] = [
     {
         id: 'html',
         name: 'HTML',
-        rating: 2,
         icon: (<FaHtml5/>),
         color: '#ff5722',
         group: SkillGroup.FRONT
@@ -116,7 +108,6 @@ const skills: ISKill[] = [
     {
         id: 'css',
         name: 'CSS',
-        rating: 2,
         icon: (<FaCss3Alt/>),
         color: '#1775bb',
         group: SkillGroup.FRONT
@@ -124,7 +115,6 @@ const skills: ISKill[] = [
     {
         id: 'js',
         name: 'JavaScript',
-        rating: 2,
         icon: (<RiJavascriptFill/>),
         color: '#fbaf41',
         group: SkillGroup.FRONT
@@ -132,7 +122,6 @@ const skills: ISKill[] = [
     {
         id: 'jquery',
         name: 'jQuery',
-        rating: 2,
         icon: (<SiJquery/>),
         color: '#0868ac',
         group: SkillGroup.FRONT
@@ -140,7 +129,6 @@ const skills: ISKill[] = [
     {
         id: 'ts',
         name: 'TypeScript',
-        rating: 2,
         icon: (<BiLogoTypescript/>),
         color: '#007bcd',
         group: SkillGroup.FRONT
@@ -250,37 +238,34 @@ const skills: ISKill[] = [
         color: '#000',
         group: SkillGroup.VCS
     },
-];
-
-const external: ISKill[] = [
     /* App */
     {
         id: 'kotlin',
         name: 'kotlin',
         rating: 1,
         icon: (<LazyLoadImage src={KotlinIcon} alt={"Kotlin Icon"} title={"Kotlin Icon"}/>),
-        group: SkillGroupExternal.APP
+        group: SkillGroup.APP
     },
     {
         id: 'android',
         name: 'Android Studio',
         rating: 1,
         icon: (<LazyLoadImage src={AndroidStudioIcon} alt={"Android Studio Icon"} title={"Android Studio Icon"}/>),
-        group: SkillGroupExternal.APP
+        group: SkillGroup.APP
     },
     {
         id: 'swift',
         name: 'swift',
         rating: 1,
         icon: (<LazyLoadImage src={SwiftIcon} alt={"Swift Icon"} title={"Swift Icon"}/>),
-        group: SkillGroupExternal.APP
+        group: SkillGroup.APP
     },
     {
         id: 'xcode',
         name: 'xcode',
         rating: 1,
         icon: (<LazyLoadImage src={XCodeIcon} alt={"XCode Icon"} title={"XCode Icon"}/>),
-        group: SkillGroupExternal.APP
+        group: SkillGroup.APP
     },
 
     /* Other */
@@ -289,26 +274,26 @@ const external: ISKill[] = [
         name: 'PHP',
         rating: 1,
         icon: (<LazyLoadImage src={PhpIcon} alt={"Php Icon"} title={"Php Icon"}/>),
-        group: SkillGroupExternal.OTHER
+        group: SkillGroup.OTHER
     },
     {
         id: 'phpstorm',
         name: 'PhpStorm',
         icon: (<LazyLoadImage src={PhpStormIcon} alt={"PhpStorm Icon"} title={"PhpStorm Icon"}/>),
-        group: SkillGroupExternal.OTHER
+        group: SkillGroup.OTHER
     },
     {
         id: 'vscode',
         name: 'VS Code',
         icon: (<LazyLoadImage src={VSCodeIcon} alt={"VSCode Icon"} title={"VSCode Icon"}/>),
-        group: SkillGroupExternal.OTHER
+        group: SkillGroup.OTHER
     },
 
     {
         id: 'figma',
         name: 'figma',
         icon: (<LazyLoadImage src={FigmaIcon} alt={"Figma Icon"} title={"Figma Icon"}/>),
-        group: SkillGroupExternal.OTHER
+        group: SkillGroup.OTHER
     },
 ]
 export default skills;

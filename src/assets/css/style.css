@@ -472,7 +472,9 @@ button {
     max-height: 100%;
     overflow: hidden;
 }
-
+#content.wallpaper .section > * {
+    width: fit-content;
+}
 /**
   Section - Home
  */
@@ -727,11 +729,19 @@ button {
     margin: 0.5rem 0;
 }
 
+.career-content .desc ul {
+    padding-left: 1rem;
+}
+
+.career-content .desc ul li {
+    list-style: disc;
+}
+
 .career-content ul {
     margin: 1rem 0;
 }
 
-.career-content ul li:not(:last-child) {
+.career-content ul:has(.og-container) li:not(:last-child) {
     margin-bottom: 1rem;
 }
 

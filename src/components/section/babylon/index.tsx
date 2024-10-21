@@ -1,6 +1,5 @@
 import React, {useEffect, useRef} from 'react';
 import {
-    Color3,
     Color4,
     Engine,
     EngineOptions,
@@ -9,13 +8,11 @@ import {
     SceneLoader,
     SceneOptions,
     UniversalCamera,
-    Vector3, WorkerPool
+    Vector3
 } from "@babylonjs/core";
 
 import "@babylonjs/loaders";
 import "@babylonjs/loaders/glTF";
-import {useDispatch} from "react-redux";
-import {mainLoaded} from "@Store/slice/loading";
 
 interface IBabylonInterface {
     rootUrl: string,
@@ -45,7 +42,7 @@ const Babylon = (props: IBabylonInterface) => {
         const createScene = (canvas: HTMLCanvasElement) => {
             // 워커 사용을 위한 WorkerLoader 생성
             const scene = new Scene(engine);
-            scene.clearColor = new Color4(0,0,0,0);
+            scene.clearColor = new Color4(0, 0, 0, 0);
 
             const target = new Vector3(0, 0, 0);
             const camera = new UniversalCamera("Camera", target, scene);

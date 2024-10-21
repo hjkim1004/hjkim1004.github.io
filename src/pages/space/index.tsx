@@ -15,7 +15,7 @@ const App = () => {
     return (
         <>
             <Header/>
-            <main id="content">
+            <main id="content" className={'wallpaper'}>
                 <HomeSection />
             </main>
             <DrawerSection />

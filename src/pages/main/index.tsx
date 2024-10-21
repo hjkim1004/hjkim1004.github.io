@@ -27,7 +27,6 @@ const App = () => {
                 <HomeSection/>
                 <ProfileSection/>
                 <CareerSection/>
-                <ProjectSection />
                 <SkillSection/>
             </main>
 

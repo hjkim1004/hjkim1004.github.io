@@ -3,6 +3,7 @@ import SmartLibrarySearch from "@Images/og_smart_search.png"
 import ssjobgy from "@Images/og_ssjobgy.jpg"
 import dental100year from "@Images/og_100dental.jpg"
 import barundc from "@Images/og_barundc.jpg"
+import kappleden from "@Images/og_kappleden.png"
 
 export interface OgData {
     url: string;
@@ -11,7 +12,6 @@ export interface OgData {
     image: string;
     site_name?: string;
 }
-
 
 const og = new Map<string, OgData>();
 og.set("http://barundc.com", {
@@ -37,6 +37,15 @@ og.set("http://100yeardental.com", {
     "image": dental100year,
     "site_name": "연세백세치과의원"
 })
+
+og.set("http://kappleden.com", {
+    "url": "http://kappleden.com",
+    "title": "김포사과나무치과",
+    "description": "김포치과, 장기동치과, 김포 임플란트, 전체 임플란트, 소아진료, 심미보철, 잇몸치료, 틀니, 턱관절 치료, 사랑니",
+    "image": kappleden,
+    "site_name": "김포사과나무치과"
+})
+
 og.set("https://nlmbookcafe.com", {
     "url": "https://www.nlmbookcafe.com/en/",
     "title": "The New Life Mission Blogs",
@@ -58,4 +67,5 @@ og.set("https://smart.gdlibrary.or.kr:9525", {
     description: "도서관 방문이 어려운 이용자를 위해 별도의 예약신청 없이 가까운 스마트 대출반납기에 비치된 도서를 현장에서 바로 대출할 수 있는 서비스를 제공합니다.",
     image: SmartLibrarySearch
 })
+
 export default og;

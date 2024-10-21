@@ -20,7 +20,7 @@ const LinkPreview = (props: ILink) => {
     }, [props.url]);
 
     return (
-        <div className={"og-container"}>
+        <a href={props.url} target={"_blank"} className={"og-container"}>
             {ogData ? (
                 <>
                     <div className={"og-img"}>
@@ -42,11 +42,11 @@ const LinkPreview = (props: ILink) => {
                         <a className={"og-link-preview"} target={"_blank"} href={props.url}>{props.url}</a>
                     </div>
                     <div className={"og-link"}>
-                        <a href={props.url} target={"_blank"}><FaAngleRight/></a>
+                        <FaAngleRight/>
                     </div>
                 </>
             )}
-        </div>
+        </a>
     );
 };
 

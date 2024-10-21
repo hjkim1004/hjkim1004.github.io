@@ -30,10 +30,14 @@ const HomeSection = () => {
                 </Suspense>
             </div>
             <h1 className="section-title" data-aos="fade-up" data-aos-delay={100}>
-                Explore Night Sky
+                Night sky
             </h1>
             <div className={"section-desc"} data-aos="fade-up" data-aos-delay={200}>
-                You can explore the night sky space by grabbing the mouse and moving it.
+                I have implemented a 3D night sky scene <br className={'pc'}/>
+                with 'Twinkle' as the theme <br className={'pc'}/>
+                using the Babylon engine.<br/><br/>
+                You can explore the night sky space <br className={'pc'}/>
+                by grabbing the mouse and moving it.
             </div>
             <div className={loading ? "loading" : 'loading hide'}>
                 <SyncLoader
